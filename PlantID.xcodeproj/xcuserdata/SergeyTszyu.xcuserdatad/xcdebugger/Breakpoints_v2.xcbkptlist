@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9DDE2314-1125-4FA2-A8A1-9321DCC927D8"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59829B9A-DD84-40E7-B398-BB715739EF08"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Measure/Sources/UI/Paywall/PaywallViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "299"
+            endingLineNumber = "299"
+            landmarkName = "buyTapped()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "59829B9A-DD84-40E7-B398-BB715739EF08 - 10942ee7e7263a69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlantID_App.PaywallViewController.buyTapped() -&gt; ()"
+                  moduleName = "PlantID App.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/SergeyTszyu/Documents/PlantID/Measure/Sources/UI/Paywall/PaywallViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "299"
+                  endingLineNumber = "299">
+               </Location>
+               <Location
+                  uuid = "59829B9A-DD84-40E7-B398-BB715739EF08 - eee009cb1cf8c7d1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (ApphudSDK.ApphudPurchaseResult) -&gt; () in PlantID_App.PaywallViewController.buyTapped() -&gt; ()"
+                  moduleName = "PlantID App.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/SergeyTszyu/Documents/PlantID/Measure/Sources/UI/Paywall/PaywallViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "299"
+                  endingLineNumber = "299">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3049BD3E-8E8B-4E51-8613-C19B51A26330"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Measure/Sources/UI/Paywall/PaywallViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "290"
+            endingLineNumber = "290"
+            landmarkName = "buyTapped()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3049BD3E-8E8B-4E51-8613-C19B51A26330 - 10942ee7e7263880"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlantID_App.PaywallViewController.buyTapped() -&gt; ()"
+                  moduleName = "PlantID App.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/SergeyTszyu/Documents/PlantID/Measure/Sources/UI/Paywall/PaywallViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "290"
+                  endingLineNumber = "290">
+               </Location>
+               <Location
+                  uuid = "3049BD3E-8E8B-4E51-8613-C19B51A26330 - 10942ee7e7263880"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlantID_App.PaywallViewController.buyTapped() -&gt; ()"
+                  moduleName = "PlantID App.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/SergeyTszyu/Documents/PlantID/Measure/Sources/UI/Paywall/PaywallViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "290"
+                  endingLineNumber = "290">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
