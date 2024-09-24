@@ -275,15 +275,15 @@
 		FAD536C42B4D1CAB009C57EE /* SettingsRoutingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRoutingDelegate.swift; sourceTree = "<group>"; };
 		FAD536C62B4D1CBF009C57EE /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		FAD536CA2B4F00A5009C57EE /* SettingsItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItems.swift; sourceTree = "<group>"; };
-		FAEF71432B465668000C232A /* PlantID App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlantID App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEF71432B465668000C232A /* Printer App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Printer App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEF71462B465668000C232A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEF71482B465668000C232A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FAEF714F2B46566A000C232A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAEF71522B46566A000C232A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAEF71542B46566A000C232A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAEF71592B46566B000C232A /* PlantIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlantIDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEF71592B46566B000C232A /* PrinterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrinterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEF715D2B46566B000C232A /* MeasureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureTests.swift; sourceTree = "<group>"; };
-		FAEF71632B46566B000C232A /* PlantIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlantIDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEF71632B46566B000C232A /* PrinterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrinterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEF71672B46566B000C232A /* MeasureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureUITests.swift; sourceTree = "<group>"; };
 		FAEF71692B46566B000C232A /* MeasureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FAEF717D2B465811000C232A /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -764,9 +764,9 @@
 		FAEF71442B465668000C232A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FAEF71432B465668000C232A /* PlantID App.app */,
-				FAEF71592B46566B000C232A /* PlantIDTests.xctest */,
-				FAEF71632B46566B000C232A /* PlantIDUITests.xctest */,
+				FAEF71432B465668000C232A /* Printer App.app */,
+				FAEF71592B46566B000C232A /* PrinterTests.xctest */,
+				FAEF71632B46566B000C232A /* PrinterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -907,9 +907,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FAEF71422B465668000C232A /* PlantID */ = {
+		FAEF71422B465668000C232A /* Printer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAEF716D2B46566B000C232A /* Build configuration list for PBXNativeTarget "PlantID" */;
+			buildConfigurationList = FAEF716D2B46566B000C232A /* Build configuration list for PBXNativeTarget "Printer" */;
 			buildPhases = (
 				FAEF713F2B465668000C232A /* Sources */,
 				FAEF71402B465668000C232A /* Frameworks */,
@@ -920,7 +920,7 @@
 			);
 			dependencies = (
 			);
-			name = PlantID;
+			name = Printer;
 			packageProductDependencies = (
 				993155E72B6BE26A0008EE8C /* AlertKit */,
 				BB9E2C2D2C2AC7F900F339FE /* GBDeviceInfo */,
@@ -928,12 +928,12 @@
 				BBBFF9342C985D1400737C36 /* RealmSwift */,
 			);
 			productName = Measure;
-			productReference = FAEF71432B465668000C232A /* PlantID App.app */;
+			productReference = FAEF71432B465668000C232A /* Printer App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FAEF71582B46566B000C232A /* PlantIDTests */ = {
+		FAEF71582B46566B000C232A /* PrinterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAEF71702B46566B000C232A /* Build configuration list for PBXNativeTarget "PlantIDTests" */;
+			buildConfigurationList = FAEF71702B46566B000C232A /* Build configuration list for PBXNativeTarget "PrinterTests" */;
 			buildPhases = (
 				FAEF71552B46566B000C232A /* Sources */,
 				FAEF71562B46566B000C232A /* Frameworks */,
@@ -944,14 +944,14 @@
 			dependencies = (
 				FAEF715B2B46566B000C232A /* PBXTargetDependency */,
 			);
-			name = PlantIDTests;
+			name = PrinterTests;
 			productName = MeasureTests;
-			productReference = FAEF71592B46566B000C232A /* PlantIDTests.xctest */;
+			productReference = FAEF71592B46566B000C232A /* PrinterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FAEF71622B46566B000C232A /* PlantIDUITests */ = {
+		FAEF71622B46566B000C232A /* PrinterUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAEF71732B46566B000C232A /* Build configuration list for PBXNativeTarget "PlantIDUITests" */;
+			buildConfigurationList = FAEF71732B46566B000C232A /* Build configuration list for PBXNativeTarget "PrinterUITests" */;
 			buildPhases = (
 				FAEF715F2B46566B000C232A /* Sources */,
 				FAEF71602B46566B000C232A /* Frameworks */,
@@ -962,9 +962,9 @@
 			dependencies = (
 				FAEF71652B46566B000C232A /* PBXTargetDependency */,
 			);
-			name = PlantIDUITests;
+			name = PrinterUITests;
 			productName = MeasureUITests;
-			productReference = FAEF71632B46566B000C232A /* PlantIDUITests.xctest */;
+			productReference = FAEF71632B46566B000C232A /* PrinterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -990,7 +990,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FAEF713E2B465668000C232A /* Build configuration list for PBXProject "PlantID" */;
+			buildConfigurationList = FAEF713E2B465668000C232A /* Build configuration list for PBXProject "Printer" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1004,14 +1004,15 @@
 				BB9E2C2C2C2AC7F900F339FE /* XCRemoteSwiftPackageReference "GBDeviceInfo" */,
 				BBBFF9302C985C7C00737C36 /* XCRemoteSwiftPackageReference "ApphudSDK" */,
 				BBBFF9332C985D1400737C36 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				BB96E5C62CA18C3C00360D37 /* XCRemoteSwiftPackageReference "R.swift" */,
 			);
 			productRefGroup = FAEF71442B465668000C232A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FAEF71422B465668000C232A /* PlantID */,
-				FAEF71582B46566B000C232A /* PlantIDTests */,
-				FAEF71622B46566B000C232A /* PlantIDUITests */,
+				FAEF71422B465668000C232A /* Printer */,
+				FAEF71582B46566B000C232A /* PrinterTests */,
+				FAEF71622B46566B000C232A /* PrinterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1186,12 +1187,12 @@
 /* Begin PBXTargetDependency section */
 		FAEF715B2B46566B000C232A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FAEF71422B465668000C232A /* PlantID */;
+			target = FAEF71422B465668000C232A /* Printer */;
 			targetProxy = FAEF715A2B46566B000C232A /* PBXContainerItemProxy */;
 		};
 		FAEF71652B46566B000C232A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FAEF71422B465668000C232A /* PlantID */;
+			target = FAEF71422B465668000C232A /* Printer */;
 			targetProxy = FAEF71642B46566B000C232A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1355,7 +1356,7 @@
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plant.Kuyman;
-				PRODUCT_NAME = "PlantID App";
+				PRODUCT_NAME = "Printer App";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -1393,7 +1394,7 @@
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plant.Kuyman;
-				PRODUCT_NAME = "PlantID App";
+				PRODUCT_NAME = "Printer App";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -1421,7 +1422,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlantID.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlantID";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Printer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Printer";
 			};
 			name = Debug;
 		};
@@ -1441,7 +1442,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlantID.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlantID";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Printer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Printer";
 			};
 			name = Release;
 		};
@@ -1484,7 +1485,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FAEF713E2B465668000C232A /* Build configuration list for PBXProject "PlantID" */ = {
+		FAEF713E2B465668000C232A /* Build configuration list for PBXProject "Printer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAEF716B2B46566B000C232A /* Debug */,
@@ -1493,7 +1494,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FAEF716D2B46566B000C232A /* Build configuration list for PBXNativeTarget "PlantID" */ = {
+		FAEF716D2B46566B000C232A /* Build configuration list for PBXNativeTarget "Printer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAEF716E2B46566B000C232A /* Debug */,
@@ -1502,7 +1503,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FAEF71702B46566B000C232A /* Build configuration list for PBXNativeTarget "PlantIDTests" */ = {
+		FAEF71702B46566B000C232A /* Build configuration list for PBXNativeTarget "PrinterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAEF71712B46566B000C232A /* Debug */,
@@ -1511,7 +1512,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FAEF71732B46566B000C232A /* Build configuration list for PBXNativeTarget "PlantIDUITests" */ = {
+		FAEF71732B46566B000C232A /* Build configuration list for PBXNativeTarget "PrinterUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAEF71742B46566B000C232A /* Debug */,
@@ -1529,6 +1530,14 @@
 			requirement = {
 				kind = upToNextMinorVersion;
 				minimumVersion = 5.1.8;
+			};
+		};
+		BB96E5C62CA18C3C00360D37 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.6.0;
 			};
 		};
 		BB9E2C2C2C2AC7F900F339FE /* XCRemoteSwiftPackageReference "GBDeviceInfo" */ = {

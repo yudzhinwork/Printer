@@ -24,6 +24,7 @@ struct Theme {
     static var altoColor = UIColor(hexString: "#D9D9D9")!
     static var jumboColor = UIColor(hexString: "#787880")!
     static var simplicityColor = UIColor(hexString: "#D0D0DB")!
+    static var mainBlue = UIColor(hexString: "#475DB6")!
     
     static func buttonStyle(_ button: UIButton, title: String = "") {
         button.setTitleColor(Theme.whiteColor, for: .normal)

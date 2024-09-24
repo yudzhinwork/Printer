@@ -1,6 +1,3 @@
-//
-//  CustomTrialView.swift
-
 import UIKit
 
 protocol CustomTrialViewDelegate: AnyObject {
@@ -21,9 +18,17 @@ class CustomTrialView: UIView {
         return imageView
     }()
     
+    private var printerImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "Settings-Printer")
+        imageView.contentMode = .scaleAspectFill
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
     private var proIconImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "ProIcon")
+        imageView.image = UIImage(named: "Settings-Pro")
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
@@ -34,32 +39,55 @@ class CustomTrialView: UIView {
         stack.axis = .vertical
         stack.alignment = .leading
         stack.distribution = .equalSpacing
-        stack.spacing = 2
+        stack.spacing = 12
         stack.backgroundColor = .clear
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.addArrangedSubview(titleLabel)
-        stack.addArrangedSubview(subtitleLabel)
+        stack.addArrangedSubview(upgradeContainerView)
         return stack
     }()
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Upgrade PRO".uppercased()
-        label.font = Fonts.bold.addFont(22)
+        label.text = "Unlock All Features"
+        label.font = Fonts.bold.addFont(18)
         label.textAlignment = .left
         label.numberOfLines = 1
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
 
-    private lazy var subtitleLabel: UILabel = {
+    private lazy var upgradeContainerView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "Settings-Button")
+        imageView.contentMode = .scaleAspectFill
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        
         let label = UILabel()
-        label.text = "Take care your plants"
-        label.font = Fonts.medium.addFont(16)
-        label.textAlignment = .left
-        label.numberOfLines = 1
+        label.text = "Upgrade to premium"
+        label.textColor = .white
+        label.font = Fonts.bold.addFont(12)
+        label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+        
+        view.addSubview(imageView)
+        view.addSubview(label)
+        
+        NSLayoutConstraint.activate([
+            imageView.topAnchor.constraint(equalTo: view.topAnchor),
+            imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            
+            label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+        
+        return view
     }()
 
     private(set) lazy var customButton: UIButton = {
@@ -82,17 +110,17 @@ class CustomTrialView: UIView {
     }
 
     private func setupUI(theme: ThemeEnumForTrialView) {
-        titleLabel.textColor = Theme.whiteColor
-        subtitleLabel.textColor = Theme.whiteColor
+        titleLabel.textColor = Theme.mainBlue
     }
     
     private func setupHierarchy() {
         addSubview(backgroundImageView)
-        addSubview(proIconImageView)
         addSubview(verticalStack)
+        addSubview(proIconImageView)
         addSubview(customButton)
+        addSubview(printerImageView)
     }
-
+    
     private func setupLayout() {
         NSLayoutConstraint.activate([
             backgroundImageView.topAnchor.constraint(equalTo: topAnchor),
@@ -100,16 +128,21 @@ class CustomTrialView: UIView {
             backgroundImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
             backgroundImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
             
-            proIconImageView.topAnchor.constraint(equalTo: topAnchor, constant: 12),
-            proIconImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12),
-
+            proIconImageView.topAnchor.constraint(equalTo: verticalStack.topAnchor, constant: 22),
+            proIconImageView.trailingAnchor.constraint(equalTo: verticalStack.trailingAnchor, constant: 12),
+            
             verticalStack.centerYAnchor.constraint(equalTo: centerYAnchor),
-            verticalStack.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            verticalStack.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
             
             customButton.topAnchor.constraint(equalTo: topAnchor),
             customButton.leadingAnchor.constraint(equalTo: leadingAnchor),
             customButton.trailingAnchor.constraint(equalTo: trailingAnchor),
             customButton.bottomAnchor.constraint(equalTo: bottomAnchor),
+            
+            upgradeContainerView.heightAnchor.constraint(equalToConstant: 36),
+            
+            printerImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            printerImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
         ])
     }
 
@@ -118,6 +151,4 @@ class CustomTrialView: UIView {
     @objc func premiumButtonTapped() {
         delegate?.premiumButtonTapped()
     }
-    
-    
 }

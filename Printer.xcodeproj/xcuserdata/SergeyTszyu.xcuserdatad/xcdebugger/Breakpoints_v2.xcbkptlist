@@ -20,28 +20,28 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "59829B9A-DD84-40E7-B398-BB715739EF08 - 10942ee7e7263a69"
+                  uuid = "59829B9A-DD84-40E7-B398-BB715739EF08 - 33a14651132b1be1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "PlantID_App.PaywallViewController.buyTapped() -&gt; ()"
-                  moduleName = "PlantID App.debug.dylib"
+                  symbolName = "Printer_App.PaywallViewController.buyTapped() -&gt; ()"
+                  moduleName = "Printer App.debug.dylib"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/SergeyTszyu/Documents/PlantID/Measure/Sources/UI/Paywall/PaywallViewController.swift"
+                  urlString = "file:///Users/SergeyTszyu/Documents/Printer/Measure/Sources/UI/Paywall/PaywallViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "299"
                   endingLineNumber = "299">
                </Location>
                <Location
-                  uuid = "59829B9A-DD84-40E7-B398-BB715739EF08 - eee009cb1cf8c7d1"
+                  uuid = "59829B9A-DD84-40E7-B398-BB715739EF08 - 22d4673a286fce89"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (ApphudSDK.ApphudPurchaseResult) -&gt; () in PlantID_App.PaywallViewController.buyTapped() -&gt; ()"
-                  moduleName = "PlantID App.debug.dylib"
+                  symbolName = "closure #2 (ApphudSDK.ApphudPurchaseResult) -&gt; () in Printer_App.PaywallViewController.buyTapped() -&gt; ()"
+                  moduleName = "Printer App.debug.dylib"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/SergeyTszyu/Documents/PlantID/Measure/Sources/UI/Paywall/PaywallViewController.swift"
+                  urlString = "file:///Users/SergeyTszyu/Documents/Printer/Measure/Sources/UI/Paywall/PaywallViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "299"
@@ -66,28 +66,28 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "3049BD3E-8E8B-4E51-8613-C19B51A26330 - 10942ee7e7263880"
+                  uuid = "3049BD3E-8E8B-4E51-8613-C19B51A26330 - 33a14651132b1a98"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "PlantID_App.PaywallViewController.buyTapped() -&gt; ()"
-                  moduleName = "PlantID App.debug.dylib"
+                  symbolName = "Printer_App.PaywallViewController.buyTapped() -&gt; ()"
+                  moduleName = "Printer App.debug.dylib"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/SergeyTszyu/Documents/PlantID/Measure/Sources/UI/Paywall/PaywallViewController.swift"
+                  urlString = "file:///Users/SergeyTszyu/Documents/Printer/Measure/Sources/UI/Paywall/PaywallViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "290"
                   endingLineNumber = "290">
                </Location>
                <Location
-                  uuid = "3049BD3E-8E8B-4E51-8613-C19B51A26330 - 10942ee7e7263880"
+                  uuid = "3049BD3E-8E8B-4E51-8613-C19B51A26330 - 33a14651132b1a98"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "PlantID_App.PaywallViewController.buyTapped() -&gt; ()"
-                  moduleName = "PlantID App.debug.dylib"
+                  symbolName = "Printer_App.PaywallViewController.buyTapped() -&gt; ()"
+                  moduleName = "Printer App.debug.dylib"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/SergeyTszyu/Documents/PlantID/Measure/Sources/UI/Paywall/PaywallViewController.swift"
+                  urlString = "file:///Users/SergeyTszyu/Documents/Printer/Measure/Sources/UI/Paywall/PaywallViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "290"

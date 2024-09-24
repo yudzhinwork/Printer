@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FAEF71422B465668000C232A"
-               BuildableName = "PlantID App.app"
-               BlueprintName = "PlantID"
-               ReferencedContainer = "container:PlantID.xcodeproj">
+               BuildableName = "Printer App.app"
+               BlueprintName = "Printer"
+               ReferencedContainer = "container:Printer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,9 +36,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FAEF71582B46566B000C232A"
-               BuildableName = "PlantIDTests.xctest"
-               BlueprintName = "PlantIDTests"
-               ReferencedContainer = "container:PlantID.xcodeproj">
+               BuildableName = "PrinterTests.xctest"
+               BlueprintName = "PrinterTests"
+               ReferencedContainer = "container:Printer.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FAEF71622B46566B000C232A"
-               BuildableName = "PlantIDUITests.xctest"
-               BlueprintName = "PlantIDUITests"
-               ReferencedContainer = "container:PlantID.xcodeproj">
+               BuildableName = "PrinterUITests.xctest"
+               BlueprintName = "PrinterUITests"
+               ReferencedContainer = "container:Printer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -69,9 +69,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FAEF71422B465668000C232A"
-            BuildableName = "PlantID App.app"
-            BlueprintName = "PlantID"
-            ReferencedContainer = "container:PlantID.xcodeproj">
+            BuildableName = "Printer App.app"
+            BlueprintName = "Printer"
+            ReferencedContainer = "container:Printer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FAEF71422B465668000C232A"
-            BuildableName = "PlantID App.app"
-            BlueprintName = "PlantID"
-            ReferencedContainer = "container:PlantID.xcodeproj">
+            BuildableName = "Printer App.app"
+            BlueprintName = "Printer"
+            ReferencedContainer = "container:Printer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

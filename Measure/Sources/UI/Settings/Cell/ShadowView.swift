@@ -12,7 +12,7 @@ class ShadowViewItem: UIView {
         }
     }
     
-    private func setupShadow() {
+    func setupShadow() {
         self.layer.cornerRadius = 12
         self.layer.shadowOffset = CGSize(width: 0, height: 5)
         self.layer.shadowRadius = 16
@@ -22,5 +22,9 @@ class ShadowViewItem: UIView {
         self.layer.shouldRasterize = true
         self.layer.masksToBounds = false
         self.layer.rasterizationScale = UIScreen.main.scale
+    }
+    
+    func resetShadow() {
+        self.layer.shadowOpacity = 0
     }
 }

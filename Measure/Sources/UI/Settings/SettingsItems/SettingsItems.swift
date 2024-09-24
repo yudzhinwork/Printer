@@ -10,9 +10,8 @@ struct SettingsItems: Hashable {
 
 extension SettingsItems {
     static let itemsArray = [
-        SettingsItems(image: "notifications-icon", title: "Notifications"),
-        SettingsItems(image: "support-icon", title: "Support"),
-        SettingsItems(image: "privacy-icon", title: "Privacy Policy"),
-        SettingsItems(image: "terms-icon", title: "Terms of Use")
+        SettingsItems(image: "Settings-Support", title: "Support"),
+        SettingsItems(image: "Settings-Privacy", title: "Privacy Policy"),
+        SettingsItems(image: "Settings-Terms", title: "Terms of Use")
     ]
 }
