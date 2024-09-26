@@ -53,6 +53,10 @@
 		BB5B172F2C88869500E0769D /* DataPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B172D2C88869500E0769D /* DataPickerViewController.swift */; };
 		BB5B17302C88869500E0769D /* DataPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5B172E2C88869500E0769D /* DataPickerViewController.xib */; };
 		BB5B17322C88895A00E0769D /* CornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B17312C88895900E0769D /* CornerView.swift */; };
+		BB7184602CA4290E0068AF13 /* SelectPrinterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB71845F2CA4290E0068AF13 /* SelectPrinterViewController.xib */; };
+		BB7184612CA4290E0068AF13 /* SelectPrinterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB71845E2CA4290E0068AF13 /* SelectPrinterViewController.swift */; };
+		BB7184642CA5260F0068AF13 /* OnboardingSucceessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB7184632CA5260F0068AF13 /* OnboardingSucceessViewController.xib */; };
+		BB7184652CA5260F0068AF13 /* OnboardingSucceessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7184622CA5260F0068AF13 /* OnboardingSucceessViewController.swift */; };
 		BB7B2CA12BDABA7100A675C3 /* PaywallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7B2CA02BDABA7100A675C3 /* PaywallButton.swift */; };
 		BB9E2C2E2C2AC7F900F339FE /* GBDeviceInfo in Frameworks */ = {isa = PBXBuildFile; productRef = BB9E2C2D2C2AC7F900F339FE /* GBDeviceInfo */; };
 		BBA4C3762C8168F40092D8FF /* OnboardingFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA4C3752C8168F40092D8FF /* OnboardingFirstViewController.swift */; };
@@ -215,6 +219,10 @@
 		BB5B172D2C88869500E0769D /* DataPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPickerViewController.swift; sourceTree = "<group>"; };
 		BB5B172E2C88869500E0769D /* DataPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataPickerViewController.xib; sourceTree = "<group>"; };
 		BB5B17312C88895900E0769D /* CornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerView.swift; sourceTree = "<group>"; };
+		BB71845E2CA4290E0068AF13 /* SelectPrinterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPrinterViewController.swift; sourceTree = "<group>"; };
+		BB71845F2CA4290E0068AF13 /* SelectPrinterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectPrinterViewController.xib; sourceTree = "<group>"; };
+		BB7184622CA5260F0068AF13 /* OnboardingSucceessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSucceessViewController.swift; sourceTree = "<group>"; };
+		BB7184632CA5260F0068AF13 /* OnboardingSucceessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingSucceessViewController.xib; sourceTree = "<group>"; };
 		BB7B2CA02BDABA7100A675C3 /* PaywallButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallButton.swift; sourceTree = "<group>"; };
 		BBA4C3752C8168F40092D8FF /* OnboardingFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFirstViewController.swift; sourceTree = "<group>"; };
 		BBA4C3782C81CB440092D8FF /* MyGardenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenViewController.swift; sourceTree = "<group>"; };
@@ -900,6 +908,10 @@
 				FAEF71962B465BB9000C232A /* OnboardingCoordinator.swift */,
 				BBA4C3752C8168F40092D8FF /* OnboardingFirstViewController.swift */,
 				BBA4C37D2C8300F30092D8FF /* OnboardingReviewViewController.swift */,
+				BB71845E2CA4290E0068AF13 /* SelectPrinterViewController.swift */,
+				BB71845F2CA4290E0068AF13 /* SelectPrinterViewController.xib */,
+				BB7184622CA5260F0068AF13 /* OnboardingSucceessViewController.swift */,
+				BB7184632CA5260F0068AF13 /* OnboardingSucceessViewController.xib */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -1024,12 +1036,14 @@
 			files = (
 				BB19E0BA2C85935B009CED7D /* MyGardenCell.xib in Resources */,
 				BB5B17262C88323300E0769D /* ReviewCell.xib in Resources */,
+				BB7184602CA4290E0068AF13 /* SelectPrinterViewController.xib in Resources */,
 				FAC3542D2B47C7B300C473C5 /* SFProDisplay-BlackItalic.ttf in Resources */,
 				BB19E0B32C8549A4009CED7D /* SettingsListCell.xib in Resources */,
 				BB5B17212C87F36500E0769D /* MyGardenRemoveViewController.xib in Resources */,
 				BB291CE22C6D176F00A31590 /* ChecklistCollectionViewCell.xib in Resources */,
 				FAC3542C2B47C7B300C473C5 /* SFProDisplay-Regular.ttf in Resources */,
 				FAEF71532B46566A000C232A /* LaunchScreen.storyboard in Resources */,
+				BB7184642CA5260F0068AF13 /* OnboardingSucceessViewController.xib in Resources */,
 				BB5B17302C88869500E0769D /* DataPickerViewController.xib in Resources */,
 				BB52F76E2C15E87D00FECB23 /* HistoryCell.xib in Resources */,
 				FAC3542B2B47C7B300C473C5 /* SFProDisplay-ThinItalic.ttf in Resources */,
@@ -1113,6 +1127,7 @@
 				BB19E0B52C8578A5009CED7D /* ShadowView.swift in Sources */,
 				BBA4C3762C8168F40092D8FF /* OnboardingFirstViewController.swift in Sources */,
 				BB4C5EC92C149341003F23EB /* HistoryViewController.swift in Sources */,
+				BB7184652CA5260F0068AF13 /* OnboardingSucceessViewController.swift in Sources */,
 				BB52F7892C16DF1900FECB23 /* CoreDataManager.swift in Sources */,
 				FAEF718B2B46595E000C232A /* AppCoordinator.swift in Sources */,
 				9910CA312B6A64E600336735 /* PremiumManager.swift in Sources */,
@@ -1135,6 +1150,7 @@
 				FAEF718D2B465982000C232A /* Coordinator.swift in Sources */,
 				BBC0D7432C8A7A3800BBBEB9 /* ScannerScanningViewController.swift in Sources */,
 				BBA4C37E2C8300F30092D8FF /* OnboardingReviewViewController.swift in Sources */,
+				BB7184612CA4290E0068AF13 /* SelectPrinterViewController.swift in Sources */,
 				FAEF71932B465B1E000C232A /* OnboardingViewController.swift in Sources */,
 				BB5B17252C88323300E0769D /* ReviewCell.swift in Sources */,
 				FAD536AD2B4AF53F009C57EE /* HowToUseCell.swift in Sources */,

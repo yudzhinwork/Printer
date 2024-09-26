@@ -19,7 +19,7 @@ struct Theme {
     static var darkGrayColor: UIColor = UIColor(hexString: "#202020")!
     static var cyanColor: UIColor = UIColor(hexString: "#2DB8D5")!
     static var yellowColor: UIColor = UIColor(hexString: "#F3A325")!
-    static var gradientColor: [UIColor] = [UIColor(hexString: "#2DFF75")!, UIColor(hexString: "#12AD5C")!]
+    static var gradientColor: [UIColor] = [UIColor(hexString: "#6DCDF0")!, UIColor(hexString: "#475DB6")!]
     static var cornflowerBlue: UIColor = UIColor(hexString: "#1C5794")!
     static var altoColor = UIColor(hexString: "#D9D9D9")!
     static var jumboColor = UIColor(hexString: "#787880")!
@@ -28,16 +28,16 @@ struct Theme {
     
     static func buttonStyle(_ button: UIButton, title: String = "") {
         button.setTitleColor(Theme.whiteColor, for: .normal)
-        button.layer.cornerRadius = 12
-        button.titleLabel?.font = Fonts.bold.addFont(20)
+        button.layer.cornerRadius = 8
+        button.titleLabel?.font = Fonts.bold.addFont(18)
         button.setTitle(title, for: .normal)
         button.clipsToBounds = true
 
         let gradient = CAGradientLayer()
         gradient.frame = CGRect(origin: .zero, size: button.bounds.size)
         gradient.colors = Theme.gradientColor.map { $0.cgColor }
-        gradient.startPoint = .topCenter
-        gradient.endPoint = .bottomCenter
+        gradient.startPoint = .centerLeft
+        gradient.endPoint = .centerRight
 
         let renderer = UIGraphicsImageRenderer(size: gradient.bounds.size)
         let gradientImage = renderer.image { context in
