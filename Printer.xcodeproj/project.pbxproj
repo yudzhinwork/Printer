@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,10 +13,6 @@
 		993155EA2B6BEC7F0008EE8C /* Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993155E92B6BEC7F0008EE8C /* Url.swift */; };
 		993155EC2B6BF5720008EE8C /* IncreasedTapAreaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993155EB2B6BF5720008EE8C /* IncreasedTapAreaButton.swift */; };
 		999090592B88C190000FA8B6 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999090582B88C190000FA8B6 /* AdSupport.framework */; };
-		BB11E6072BB7266000C3D16B /* AreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB11E6002BB7266000C3D16B /* AreaViewController.swift */; };
-		BB11E6092BB7266000C3D16B /* LineNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB11E6022BB7266000C3D16B /* LineNode.swift */; };
-		BB11E60A2BB7266000C3D16B /* MeasureSCNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB11E6032BB7266000C3D16B /* MeasureSCNView.swift */; };
-		BB11E60C2BB7266000C3D16B /* SCNSphere+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB11E6052BB7266000C3D16B /* SCNSphere+Init.swift */; };
 		BB19E0AE2C85478A009CED7D /* SettingsSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19E0AC2C85478A009CED7D /* SettingsSwitchCell.swift */; };
 		BB19E0AF2C85478A009CED7D /* SettingsSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB19E0AD2C85478A009CED7D /* SettingsSwitchCell.xib */; };
 		BB19E0B22C8549A4009CED7D /* SettingsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19E0B02C8549A4009CED7D /* SettingsListCell.swift */; };
@@ -27,17 +23,14 @@
 		BB23F5DA2C91691500AAA386 /* PaywallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB23F5D82C91691500AAA386 /* PaywallViewController.swift */; };
 		BB23F5DB2C91691500AAA386 /* PaywallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB23F5D92C91691500AAA386 /* PaywallViewController.xib */; };
 		BB28F41B2C1AF4B4004A0519 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB28F41A2C1AF4B4004A0519 /* UIButton+Extensions.swift */; };
-		BB28F41E2C1B687F004A0519 /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB28F41D2C1B687F004A0519 /* HistoryDetailViewController.swift */; };
 		BB291CE12C6D176F00A31590 /* ChecklistCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB291CDF2C6D176F00A31590 /* ChecklistCollectionViewCell.swift */; };
 		BB291CE22C6D176F00A31590 /* ChecklistCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB291CE02C6D176F00A31590 /* ChecklistCollectionViewCell.xib */; };
 		BB36532A2C67AC6000858C98 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3653292C67AC6000858C98 /* BaseViewController.swift */; };
-		BB36532D2C69218F00858C98 /* HistoryDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36532C2C69218F00858C98 /* HistoryDataViewController.swift */; };
 		BB3653322C6B47AA00858C98 /* OnboardingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3653312C6B47AA00858C98 /* OnboardingButton.swift */; };
-		BB4C5EC92C149341003F23EB /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4C5EC82C149340003F23EB /* HistoryViewController.swift */; };
+		BB4BFD782CADEB3A0063B235 /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4BFD762CADEB3A0063B235 /* DocumentsViewController.swift */; };
+		BB4BFD792CADEB3A0063B235 /* DocumentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB4BFD772CADEB3A0063B235 /* DocumentsViewController.xib */; };
 		BB4C7EB62C8C1BF1000ED4A6 /* PlainPlantModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4C7EB52C8C1BF1000ED4A6 /* PlainPlantModels.swift */; };
 		BB4F75462C4402E100010CFF /* DiscountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F75452C4402E100010CFF /* DiscountManager.swift */; };
-		BB52F76D2C15E87D00FECB23 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB52F76B2C15E87D00FECB23 /* HistoryCell.swift */; };
-		BB52F76E2C15E87D00FECB23 /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB52F76C2C15E87D00FECB23 /* HistoryCell.xib */; };
 		BB52F7732C16D62D00FECB23 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB52F7722C16D62D00FECB23 /* CoreData.framework */; };
 		BB52F7872C16DEB000FECB23 /* HistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB52F7862C16DEB000FECB23 /* HistoryManager.swift */; };
 		BB52F7892C16DF1900FECB23 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB52F7882C16DF1900FECB23 /* CoreDataManager.swift */; };
@@ -48,8 +41,6 @@
 		BB5B17212C87F36500E0769D /* MyGardenRemoveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5B171F2C87F36500E0769D /* MyGardenRemoveViewController.xib */; };
 		BB5B17252C88323300E0769D /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B17232C88323300E0769D /* ReviewCell.swift */; };
 		BB5B17262C88323300E0769D /* ReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5B17242C88323300E0769D /* ReviewCell.xib */; };
-		BB5B172A2C88823400E0769D /* ScannerFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B17282C88823400E0769D /* ScannerFirstViewController.swift */; };
-		BB5B172B2C88823400E0769D /* ScannerFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5B17292C88823400E0769D /* ScannerFirstViewController.xib */; };
 		BB5B172F2C88869500E0769D /* DataPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B172D2C88869500E0769D /* DataPickerViewController.swift */; };
 		BB5B17302C88869500E0769D /* DataPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5B172E2C88869500E0769D /* DataPickerViewController.xib */; };
 		BB5B17322C88895A00E0769D /* CornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B17312C88895900E0769D /* CornerView.swift */; };
@@ -66,22 +57,20 @@
 		BBB2B2622C21FADF0099B6FE /* TabsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB2B2612C21FADF0099B6FE /* TabsControl.swift */; };
 		BBBFF9322C985C7C00737C36 /* ApphudSDK in Frameworks */ = {isa = PBXBuildFile; productRef = BBBFF9312C985C7C00737C36 /* ApphudSDK */; };
 		BBBFF9352C985D1400737C36 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BBBFF9342C985D1400737C36 /* RealmSwift */; };
-		BBC0D7422C8A7A3800BBBEB9 /* ScannerScanningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC0D7412C8A7A3800BBBEB9 /* ScannerScanningViewController.xib */; };
-		BBC0D7432C8A7A3800BBBEB9 /* ScannerScanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC0D7402C8A7A3800BBBEB9 /* ScannerScanningViewController.swift */; };
-		BBC0D7472C8A81FB00BBBEB9 /* ScannerResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC0D7462C8A81FB00BBBEB9 /* ScannerResultViewController.xib */; };
-		BBC0D7482C8A81FB00BBBEB9 /* ScannerResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC0D7452C8A81FB00BBBEB9 /* ScannerResultViewController.swift */; };
 		BBC0D74A2C8A82D400BBBEB9 /* PlantModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC0D7492C8A82D400BBBEB9 /* PlantModels.swift */; };
 		BBC752742BDF5580008AA207 /* GradientLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC752732BDF5580008AA207 /* GradientLabel.swift */; };
 		BBC752762BDF81FF008AA207 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC752752BDF81FF008AA207 /* Device.swift */; };
 		BBD4077D2C9B393D00FECBD3 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = BBBFF9342C985D1400737C36 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BBD9B4002C8AADCE00E138E6 /* ScannerNotFoundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBD9B3FF2C8AADCE00E138E6 /* ScannerNotFoundViewController.xib */; };
-		BBD9B4012C8AADCE00E138E6 /* ScannerNotFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD9B3FE2C8AADCE00E138E6 /* ScannerNotFoundViewController.swift */; };
-		BBD9B4062C8AB84200E138E6 /* ScannerResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBD9B4052C8AB84200E138E6 /* ScannerResultCell.xib */; };
-		BBD9B4072C8AB84200E138E6 /* ScannerResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD9B4042C8AB84200E138E6 /* ScannerResultCell.swift */; };
-		BBD9B40D2C8BE56900E138E6 /* ScannerPlantIsHealthyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBD9B40C2C8BE56900E138E6 /* ScannerPlantIsHealthyController.xib */; };
-		BBD9B40E2C8BE56900E138E6 /* ScannerPlantIsHealthyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD9B40B2C8BE56900E138E6 /* ScannerPlantIsHealthyController.swift */; };
-		BBD9B4122C8BFED900E138E6 /* ScannerResultNotHealthyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBD9B4112C8BFED900E138E6 /* ScannerResultNotHealthyCell.xib */; };
-		BBD9B4132C8BFED900E138E6 /* ScannerResultNotHealthyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD9B4102C8BFED900E138E6 /* ScannerResultNotHealthyCell.swift */; };
+		BBFAF8A12CB10D0100C325B9 /* PrintWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBFAF8A02CB10D0100C325B9 /* PrintWebViewController.xib */; };
+		BBFAF8A22CB10D0100C325B9 /* PrintWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFAF89F2CB10D0100C325B9 /* PrintWebViewController.swift */; };
+		BBFAF8A62CB1671500C325B9 /* PrintIDCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBFAF8A52CB1671500C325B9 /* PrintIDCardViewController.xib */; };
+		BBFAF8A72CB1671500C325B9 /* PrintIDCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFAF8A42CB1671500C325B9 /* PrintIDCardViewController.swift */; };
+		BBFAF8AB2CB16B2600C325B9 /* PrintIDCardCropViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBFAF8AA2CB16B2600C325B9 /* PrintIDCardCropViewController.xib */; };
+		BBFAF8AC2CB16B2600C325B9 /* PrintIDCardCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFAF8A92CB16B2600C325B9 /* PrintIDCardCropViewController.swift */; };
+		BBFAF8B02CB170BF00C325B9 /* ScannerResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBFAF8AF2CB170BF00C325B9 /* ScannerResultViewController.xib */; };
+		BBFAF8B12CB170BF00C325B9 /* ScannerResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFAF8AE2CB170BF00C325B9 /* ScannerResultViewController.swift */; };
+		BBFE077C2CAD69B8007D10AA /* PrinterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBFE077B2CAD69B8007D10AA /* PrinterViewController.xib */; };
+		BBFE077D2CAD69B8007D10AA /* PrinterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFE077A2CAD69B8007D10AA /* PrinterViewController.swift */; };
 		FA6E507B2B4FA0BF0041B7EC /* SettingsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E507A2B4FA0BF0041B7EC /* SettingsHeader.swift */; };
 		FA6E507D2B50F2F90041B7EC /* CustomTrialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E507C2B50F2F80041B7EC /* CustomTrialView.swift */; };
 		FA6E50802B5109480041B7EC /* ThemeEnumForTrialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E507F2B5109480041B7EC /* ThemeEnumForTrialView.swift */; };
@@ -90,8 +79,6 @@
 		FA6E51532B59F1320041B7EC /* CameraRouterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E51522B59F1320041B7EC /* CameraRouterDelegate.swift */; };
 		FA6E51552B59F1450041B7EC /* CameraCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E51542B59F1450041B7EC /* CameraCoordinator.swift */; };
 		FA6E515B2B59F9A30041B7EC /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6E515A2B59F9A30041B7EC /* ARKit.framework */; };
-		FA6E515E2B5A223A0041B7EC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E515D2B5A223A0041B7EC /* ResultViewController.swift */; };
-		FA7183BD2C7BAD4A0068974B /* History.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA7183BB2C7BAD4A0068974B /* History.xcdatamodeld */; };
 		FA7183C92C7CFBED0068974B /* EnlargedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7183C82C7CFBED0068974B /* EnlargedButton.swift */; };
 		FAC3541E2B468D6A00C473C5 /* OnboardingItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC3541D2B468D6A00C473C5 /* OnboardingItems.swift */; };
 		FAC354292B47C7B200C473C5 /* SFProDisplay-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAC354202B47C7B200C473C5 /* SFProDisplay-SemiBoldItalic.ttf */; };
@@ -179,10 +166,6 @@
 		993155EB2B6BF5720008EE8C /* IncreasedTapAreaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncreasedTapAreaButton.swift; sourceTree = "<group>"; };
 		999090582B88C190000FA8B6 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		9990905A2B88C196000FA8B6 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		BB11E6002BB7266000C3D16B /* AreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaViewController.swift; sourceTree = "<group>"; };
-		BB11E6022BB7266000C3D16B /* LineNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineNode.swift; sourceTree = "<group>"; };
-		BB11E6032BB7266000C3D16B /* MeasureSCNView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasureSCNView.swift; sourceTree = "<group>"; };
-		BB11E6052BB7266000C3D16B /* SCNSphere+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNSphere+Init.swift"; sourceTree = "<group>"; };
 		BB19E0AC2C85478A009CED7D /* SettingsSwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSwitchCell.swift; sourceTree = "<group>"; };
 		BB19E0AD2C85478A009CED7D /* SettingsSwitchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsSwitchCell.xib; sourceTree = "<group>"; };
 		BB19E0B02C8549A4009CED7D /* SettingsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsListCell.swift; sourceTree = "<group>"; };
@@ -193,17 +176,14 @@
 		BB23F5D82C91691500AAA386 /* PaywallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallViewController.swift; sourceTree = "<group>"; };
 		BB23F5D92C91691500AAA386 /* PaywallViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaywallViewController.xib; sourceTree = "<group>"; };
 		BB28F41A2C1AF4B4004A0519 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
-		BB28F41D2C1B687F004A0519 /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewController.swift; sourceTree = "<group>"; };
 		BB291CDF2C6D176F00A31590 /* ChecklistCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistCollectionViewCell.swift; sourceTree = "<group>"; };
 		BB291CE02C6D176F00A31590 /* ChecklistCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChecklistCollectionViewCell.xib; sourceTree = "<group>"; };
 		BB3653292C67AC6000858C98 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		BB36532C2C69218F00858C98 /* HistoryDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDataViewController.swift; sourceTree = "<group>"; };
 		BB3653312C6B47AA00858C98 /* OnboardingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingButton.swift; sourceTree = "<group>"; };
-		BB4C5EC82C149340003F23EB /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		BB4BFD762CADEB3A0063B235 /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewController.swift; sourceTree = "<group>"; };
+		BB4BFD772CADEB3A0063B235 /* DocumentsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentsViewController.xib; sourceTree = "<group>"; };
 		BB4C7EB52C8C1BF1000ED4A6 /* PlainPlantModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainPlantModels.swift; sourceTree = "<group>"; };
 		BB4F75452C4402E100010CFF /* DiscountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountManager.swift; sourceTree = "<group>"; };
-		BB52F76B2C15E87D00FECB23 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
-		BB52F76C2C15E87D00FECB23 /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
 		BB52F7722C16D62D00FECB23 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BB52F7862C16DEB000FECB23 /* HistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryManager.swift; sourceTree = "<group>"; };
 		BB52F7882C16DF1900FECB23 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -214,8 +194,6 @@
 		BB5B171F2C87F36500E0769D /* MyGardenRemoveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyGardenRemoveViewController.xib; sourceTree = "<group>"; };
 		BB5B17232C88323300E0769D /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		BB5B17242C88323300E0769D /* ReviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewCell.xib; sourceTree = "<group>"; };
-		BB5B17282C88823400E0769D /* ScannerFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerFirstViewController.swift; sourceTree = "<group>"; };
-		BB5B17292C88823400E0769D /* ScannerFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScannerFirstViewController.xib; sourceTree = "<group>"; };
 		BB5B172D2C88869500E0769D /* DataPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPickerViewController.swift; sourceTree = "<group>"; };
 		BB5B172E2C88869500E0769D /* DataPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataPickerViewController.xib; sourceTree = "<group>"; };
 		BB5B17312C88895900E0769D /* CornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerView.swift; sourceTree = "<group>"; };
@@ -228,21 +206,19 @@
 		BBA4C3782C81CB440092D8FF /* MyGardenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenViewController.swift; sourceTree = "<group>"; };
 		BBA4C37D2C8300F30092D8FF /* OnboardingReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingReviewViewController.swift; sourceTree = "<group>"; };
 		BBB2B2612C21FADF0099B6FE /* TabsControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsControl.swift; sourceTree = "<group>"; };
-		BBC0D7402C8A7A3800BBBEB9 /* ScannerScanningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerScanningViewController.swift; sourceTree = "<group>"; };
-		BBC0D7412C8A7A3800BBBEB9 /* ScannerScanningViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScannerScanningViewController.xib; sourceTree = "<group>"; };
-		BBC0D7452C8A81FB00BBBEB9 /* ScannerResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerResultViewController.swift; sourceTree = "<group>"; };
-		BBC0D7462C8A81FB00BBBEB9 /* ScannerResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScannerResultViewController.xib; sourceTree = "<group>"; };
 		BBC0D7492C8A82D400BBBEB9 /* PlantModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantModels.swift; sourceTree = "<group>"; };
 		BBC752732BDF5580008AA207 /* GradientLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLabel.swift; sourceTree = "<group>"; };
 		BBC752752BDF81FF008AA207 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		BBD9B3FE2C8AADCE00E138E6 /* ScannerNotFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerNotFoundViewController.swift; sourceTree = "<group>"; };
-		BBD9B3FF2C8AADCE00E138E6 /* ScannerNotFoundViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScannerNotFoundViewController.xib; sourceTree = "<group>"; };
-		BBD9B4042C8AB84200E138E6 /* ScannerResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerResultCell.swift; sourceTree = "<group>"; };
-		BBD9B4052C8AB84200E138E6 /* ScannerResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScannerResultCell.xib; sourceTree = "<group>"; };
-		BBD9B40B2C8BE56900E138E6 /* ScannerPlantIsHealthyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerPlantIsHealthyController.swift; sourceTree = "<group>"; };
-		BBD9B40C2C8BE56900E138E6 /* ScannerPlantIsHealthyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScannerPlantIsHealthyController.xib; sourceTree = "<group>"; };
-		BBD9B4102C8BFED900E138E6 /* ScannerResultNotHealthyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerResultNotHealthyCell.swift; sourceTree = "<group>"; };
-		BBD9B4112C8BFED900E138E6 /* ScannerResultNotHealthyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScannerResultNotHealthyCell.xib; sourceTree = "<group>"; };
+		BBFAF89F2CB10D0100C325B9 /* PrintWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintWebViewController.swift; sourceTree = "<group>"; };
+		BBFAF8A02CB10D0100C325B9 /* PrintWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrintWebViewController.xib; sourceTree = "<group>"; };
+		BBFAF8A42CB1671500C325B9 /* PrintIDCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintIDCardViewController.swift; sourceTree = "<group>"; };
+		BBFAF8A52CB1671500C325B9 /* PrintIDCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrintIDCardViewController.xib; sourceTree = "<group>"; };
+		BBFAF8A92CB16B2600C325B9 /* PrintIDCardCropViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintIDCardCropViewController.swift; sourceTree = "<group>"; };
+		BBFAF8AA2CB16B2600C325B9 /* PrintIDCardCropViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrintIDCardCropViewController.xib; sourceTree = "<group>"; };
+		BBFAF8AE2CB170BF00C325B9 /* ScannerResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerResultViewController.swift; sourceTree = "<group>"; };
+		BBFAF8AF2CB170BF00C325B9 /* ScannerResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScannerResultViewController.xib; sourceTree = "<group>"; };
+		BBFE077A2CAD69B8007D10AA /* PrinterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterViewController.swift; sourceTree = "<group>"; };
+		BBFE077B2CAD69B8007D10AA /* PrinterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrinterViewController.xib; sourceTree = "<group>"; };
 		FA6E507A2B4FA0BF0041B7EC /* SettingsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHeader.swift; sourceTree = "<group>"; };
 		FA6E507C2B50F2F80041B7EC /* CustomTrialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTrialView.swift; sourceTree = "<group>"; };
 		FA6E507F2B5109480041B7EC /* ThemeEnumForTrialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeEnumForTrialView.swift; sourceTree = "<group>"; };
@@ -251,8 +227,6 @@
 		FA6E51522B59F1320041B7EC /* CameraRouterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRouterDelegate.swift; sourceTree = "<group>"; };
 		FA6E51542B59F1450041B7EC /* CameraCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCoordinator.swift; sourceTree = "<group>"; };
 		FA6E515A2B59F9A30041B7EC /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
-		FA6E515D2B5A223A0041B7EC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		FA7183BC2C7BAD4A0068974B /* History.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = History.xcdatamodel; sourceTree = "<group>"; };
 		FA7183C82C7CFBED0068974B /* EnlargedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlargedButton.swift; sourceTree = "<group>"; };
 		FAC3541D2B468D6A00C473C5 /* OnboardingItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItems.swift; sourceTree = "<group>"; };
 		FAC354202B47C7B200C473C5 /* SFProDisplay-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -306,6 +280,10 @@
 		FAEF71982B465CC4000C232A /* OboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OboardingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BB4BFD7A2CAECDB30063B235 /* PrintText */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = PrintText; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		FAEF71402B465668000C232A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -358,17 +336,6 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		BB11E6062BB7266000C3D16B /* NewCamera */ = {
-			isa = PBXGroup;
-			children = (
-				BB11E6002BB7266000C3D16B /* AreaViewController.swift */,
-				BB11E6022BB7266000C3D16B /* LineNode.swift */,
-				BB11E6032BB7266000C3D16B /* MeasureSCNView.swift */,
-				BB11E6052BB7266000C3D16B /* SCNSphere+Init.swift */,
-			);
-			path = NewCamera;
-			sourceTree = "<group>";
-		};
 		BB19E0B62C859349009CED7D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,14 +343,6 @@
 				BB19E0B82C85935B009CED7D /* MyGardenCell.xib */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		BB28F41C2C1B685E004A0519 /* HistoryDetailViewController */ = {
-			isa = PBXGroup;
-			children = (
-				BB28F41D2C1B687F004A0519 /* HistoryDetailViewController.swift */,
-			);
-			path = HistoryDetailViewController;
 			sourceTree = "<group>";
 		};
 		BB291CDE2C6D175D00A31590 /* New Group */ = {
@@ -403,14 +362,6 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		BB36532B2C69215300858C98 /* HistoryDataViewController */ = {
-			isa = PBXGroup;
-			children = (
-				BB36532C2C69218F00858C98 /* HistoryDataViewController.swift */,
-			);
-			path = HistoryDataViewController;
-			sourceTree = "<group>";
-		};
 		BB3653302C6B479300858C98 /* OnboardingButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,33 +370,13 @@
 			path = OnboardingButton;
 			sourceTree = "<group>";
 		};
-		BB367D922C60CFB1008D05CE /* Model */ = {
+		BB4BFD752CADEB280063B235 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				FA7183BB2C7BAD4A0068974B /* History.xcdatamodeld */,
+				BB4BFD762CADEB3A0063B235 /* DocumentsViewController.swift */,
+				BB4BFD772CADEB3A0063B235 /* DocumentsViewController.xib */,
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		BB4C5EC72C149327003F23EB /* History */ = {
-			isa = PBXGroup;
-			children = (
-				BB36532B2C69215300858C98 /* HistoryDataViewController */,
-				BB28F41C2C1B685E004A0519 /* HistoryDetailViewController */,
-				BB367D922C60CFB1008D05CE /* Model */,
-				BB52F76A2C15E86200FECB23 /* Cell */,
-				BB4C5EC82C149340003F23EB /* HistoryViewController.swift */,
-			);
-			path = History;
-			sourceTree = "<group>";
-		};
-		BB52F76A2C15E86200FECB23 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				BB52F76B2C15E87D00FECB23 /* HistoryCell.swift */,
-				BB52F76C2C15E87D00FECB23 /* HistoryCell.xib */,
-			);
-			path = Cell;
+			path = Documents;
 			sourceTree = "<group>";
 		};
 		BB52F7852C16DE9D00FECB23 /* Manager */ = {
@@ -465,15 +396,6 @@
 				BB5B17242C88323300E0769D /* ReviewCell.xib */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		BB5B17272C88821B00E0769D /* ScannerFirstViewController */ = {
-			isa = PBXGroup;
-			children = (
-				BB5B17282C88823400E0769D /* ScannerFirstViewController.swift */,
-				BB5B17292C88823400E0769D /* ScannerFirstViewController.xib */,
-			);
-			path = ScannerFirstViewController;
 			sourceTree = "<group>";
 		};
 		BB5B172C2C88868300E0769D /* DataPicker */ = {
@@ -499,11 +421,7 @@
 		BBA4C37A2C81CCDB0092D8FF /* Scanner */ = {
 			isa = PBXGroup;
 			children = (
-				BBD9B4082C8BE4F700E138E6 /* ScannerPlantIsHealthy */,
-				BBD9B3FD2C8AADB700E138E6 /* ScannrNotFoundViewController */,
-				BBC0D7442C8A81E600BBBEB9 /* ScannerResultViewController */,
-				BBC0D73F2C8A7A2200BBBEB9 /* ScannerScanningViewController */,
-				BB5B17272C88821B00E0769D /* ScannerFirstViewController */,
+				BBFAF8AD2CB170A600C325B9 /* ScannerResultViewController */,
 				BB56E7F92C8A2E6000A3723B /* ScannerViewController.swift */,
 				BB56E7FA2C8A2E6000A3723B /* ScannerViewController.xib */,
 				BBC0D7492C8A82D400BBBEB9 /* PlantModels.swift */,
@@ -520,60 +438,50 @@
 			path = TabsControl;
 			sourceTree = "<group>";
 		};
-		BBC0D73F2C8A7A2200BBBEB9 /* ScannerScanningViewController */ = {
+		BBFAF89E2CB10CE300C325B9 /* PrintWeb */ = {
 			isa = PBXGroup;
 			children = (
-				BBC0D7402C8A7A3800BBBEB9 /* ScannerScanningViewController.swift */,
-				BBC0D7412C8A7A3800BBBEB9 /* ScannerScanningViewController.xib */,
+				BBFAF89F2CB10D0100C325B9 /* PrintWebViewController.swift */,
+				BBFAF8A02CB10D0100C325B9 /* PrintWebViewController.xib */,
 			);
-			path = ScannerScanningViewController;
+			path = PrintWeb;
 			sourceTree = "<group>";
 		};
-		BBC0D7442C8A81E600BBBEB9 /* ScannerResultViewController */ = {
+		BBFAF8A32CB1670200C325B9 /* PrintIDCard */ = {
 			isa = PBXGroup;
 			children = (
-				BBD9B40F2C8BFEB000E138E6 /* ScannerResultNotHealthyCell */,
-				BBD9B4032C8AB82600E138E6 /* ScannerResultCell */,
-				BBC0D7452C8A81FB00BBBEB9 /* ScannerResultViewController.swift */,
-				BBC0D7462C8A81FB00BBBEB9 /* ScannerResultViewController.xib */,
+				BBFAF8A82CB16B1300C325B9 /* PrintIDCardCrop */,
+				BBFAF8A42CB1671500C325B9 /* PrintIDCardViewController.swift */,
+				BBFAF8A52CB1671500C325B9 /* PrintIDCardViewController.xib */,
+			);
+			path = PrintIDCard;
+			sourceTree = "<group>";
+		};
+		BBFAF8A82CB16B1300C325B9 /* PrintIDCardCrop */ = {
+			isa = PBXGroup;
+			children = (
+				BBFAF8A92CB16B2600C325B9 /* PrintIDCardCropViewController.swift */,
+				BBFAF8AA2CB16B2600C325B9 /* PrintIDCardCropViewController.xib */,
+			);
+			path = PrintIDCardCrop;
+			sourceTree = "<group>";
+		};
+		BBFAF8AD2CB170A600C325B9 /* ScannerResultViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BBFAF8AE2CB170BF00C325B9 /* ScannerResultViewController.swift */,
+				BBFAF8AF2CB170BF00C325B9 /* ScannerResultViewController.xib */,
 			);
 			path = ScannerResultViewController;
 			sourceTree = "<group>";
 		};
-		BBD9B3FD2C8AADB700E138E6 /* ScannrNotFoundViewController */ = {
+		BBFE07792CAD69A3007D10AA /* Printer */ = {
 			isa = PBXGroup;
 			children = (
-				BBD9B3FE2C8AADCE00E138E6 /* ScannerNotFoundViewController.swift */,
-				BBD9B3FF2C8AADCE00E138E6 /* ScannerNotFoundViewController.xib */,
+				BBFE077A2CAD69B8007D10AA /* PrinterViewController.swift */,
+				BBFE077B2CAD69B8007D10AA /* PrinterViewController.xib */,
 			);
-			path = ScannrNotFoundViewController;
-			sourceTree = "<group>";
-		};
-		BBD9B4032C8AB82600E138E6 /* ScannerResultCell */ = {
-			isa = PBXGroup;
-			children = (
-				BBD9B4042C8AB84200E138E6 /* ScannerResultCell.swift */,
-				BBD9B4052C8AB84200E138E6 /* ScannerResultCell.xib */,
-			);
-			path = ScannerResultCell;
-			sourceTree = "<group>";
-		};
-		BBD9B4082C8BE4F700E138E6 /* ScannerPlantIsHealthy */ = {
-			isa = PBXGroup;
-			children = (
-				BBD9B40B2C8BE56900E138E6 /* ScannerPlantIsHealthyController.swift */,
-				BBD9B40C2C8BE56900E138E6 /* ScannerPlantIsHealthyController.xib */,
-			);
-			path = ScannerPlantIsHealthy;
-			sourceTree = "<group>";
-		};
-		BBD9B40F2C8BFEB000E138E6 /* ScannerResultNotHealthyCell */ = {
-			isa = PBXGroup;
-			children = (
-				BBD9B4102C8BFED900E138E6 /* ScannerResultNotHealthyCell.swift */,
-				BBD9B4112C8BFED900E138E6 /* ScannerResultNotHealthyCell.xib */,
-			);
-			path = ScannerResultNotHealthyCell;
+			path = Printer;
 			sourceTree = "<group>";
 		};
 		FA6E50792B4FA07A0041B7EC /* Cell */ = {
@@ -600,8 +508,6 @@
 		FA6E514D2B59F06E0041B7EC /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				BB11E6062BB7266000C3D16B /* NewCamera */,
-				FA6E515C2B5A22110041B7EC /* Result */,
 				FA6E514E2B59F0CA0041B7EC /* CameraViewController.swift */,
 				FA6E51502B59F1120041B7EC /* CameraViewModel.swift */,
 				FA6E51522B59F1320041B7EC /* CameraRouterDelegate.swift */,
@@ -619,14 +525,6 @@
 				FA6E515A2B59F9A30041B7EC /* ARKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FA6E515C2B5A22110041B7EC /* Result */ = {
-			isa = PBXGroup;
-			children = (
-				FA6E515D2B5A223A0041B7EC /* ResultViewController.swift */,
-			);
-			path = Result;
 			sourceTree = "<group>";
 		};
 		FAC3541A2B468D0400C473C5 /* OnboardingItems */ = {
@@ -874,11 +772,15 @@
 		FAEF718F2B4659E4000C232A /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				BBFAF8A32CB1670200C325B9 /* PrintIDCard */,
+				BBFAF89E2CB10CE300C325B9 /* PrintWeb */,
+				BB4BFD7A2CAECDB30063B235 /* PrintText */,
+				BB4BFD752CADEB280063B235 /* Documents */,
+				BBFE07792CAD69A3007D10AA /* Printer */,
 				BB5B172C2C88868300E0769D /* DataPicker */,
 				BBA4C37A2C81CCDB0092D8FF /* Scanner */,
 				BBA4C3772C81CB340092D8FF /* MyGarden */,
 				BB3653282C67AC1D00858C98 /* Base */,
-				BB4C5EC72C149327003F23EB /* History */,
 				FA6E514D2B59F06E0041B7EC /* Camera */,
 				FAD536BF2B4D1C0C009C57EE /* Settings */,
 				FAD5369D2B4A70D6009C57EE /* Main */,
@@ -931,6 +833,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BB4BFD7A2CAECDB30063B235 /* PrintText */,
 			);
 			name = Printer;
 			packageProductDependencies = (
@@ -1039,29 +944,27 @@
 				BB7184602CA4290E0068AF13 /* SelectPrinterViewController.xib in Resources */,
 				FAC3542D2B47C7B300C473C5 /* SFProDisplay-BlackItalic.ttf in Resources */,
 				BB19E0B32C8549A4009CED7D /* SettingsListCell.xib in Resources */,
+				BBFE077C2CAD69B8007D10AA /* PrinterViewController.xib in Resources */,
 				BB5B17212C87F36500E0769D /* MyGardenRemoveViewController.xib in Resources */,
 				BB291CE22C6D176F00A31590 /* ChecklistCollectionViewCell.xib in Resources */,
+				BBFAF8A12CB10D0100C325B9 /* PrintWebViewController.xib in Resources */,
 				FAC3542C2B47C7B300C473C5 /* SFProDisplay-Regular.ttf in Resources */,
+				BBFAF8AB2CB16B2600C325B9 /* PrintIDCardCropViewController.xib in Resources */,
 				FAEF71532B46566A000C232A /* LaunchScreen.storyboard in Resources */,
 				BB7184642CA5260F0068AF13 /* OnboardingSucceessViewController.xib in Resources */,
 				BB5B17302C88869500E0769D /* DataPickerViewController.xib in Resources */,
-				BB52F76E2C15E87D00FECB23 /* HistoryCell.xib in Resources */,
 				FAC3542B2B47C7B300C473C5 /* SFProDisplay-ThinItalic.ttf in Resources */,
 				FAC354292B47C7B200C473C5 /* SFProDisplay-SemiBoldItalic.ttf in Resources */,
-				BBC0D7472C8A81FB00BBBEB9 /* ScannerResultViewController.xib in Resources */,
-				BBD9B4122C8BFED900E138E6 /* ScannerResultNotHealthyCell.xib in Resources */,
-				BBC0D7422C8A7A3800BBBEB9 /* ScannerScanningViewController.xib in Resources */,
-				BBD9B4062C8AB84200E138E6 /* ScannerResultCell.xib in Resources */,
+				BBFAF8A62CB1671500C325B9 /* PrintIDCardViewController.xib in Resources */,
 				FAC3542E2B47C7B300C473C5 /* SFProDisplay-Bold.ttf in Resources */,
+				BBFAF8B02CB170BF00C325B9 /* ScannerResultViewController.xib in Resources */,
 				FAC3542A2B47C7B300C473C5 /* SFProDisplay-Medium.ttf in Resources */,
-				BBD9B4002C8AADCE00E138E6 /* ScannerNotFoundViewController.xib in Resources */,
 				BB23F5DB2C91691500AAA386 /* PaywallViewController.xib in Resources */,
-				BB5B172B2C88823400E0769D /* ScannerFirstViewController.xib in Resources */,
-				BBD9B40D2C8BE56900E138E6 /* ScannerPlantIsHealthyController.xib in Resources */,
 				BB19E0AF2C85478A009CED7D /* SettingsSwitchCell.xib in Resources */,
 				FAC3542F2B47C7B300C473C5 /* SFProDisplay-HeavyItalic.ttf in Resources */,
 				BB56E7FB2C8A2E6000A3723B /* ScannerViewController.xib in Resources */,
 				FAEF71502B46566A000C232A /* Assets.xcassets in Resources */,
+				BB4BFD792CADEB3A0063B235 /* DocumentsViewController.xib in Resources */,
 				FAC354302B47C7B300C473C5 /* SFProDisplay-LightItalic.ttf in Resources */,
 				FAC354312B47C7B300C473C5 /* SFProDisplay-UltraLightItalic.ttf in Resources */,
 			);
@@ -1089,9 +992,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAEF71992B465CC4000C232A /* OboardingViewModel.swift in Sources */,
-				BB11E60C2BB7266000C3D16B /* SCNSphere+Init.swift in Sources */,
 				FAD5369F2B4A7109009C57EE /* MainViewController.swift in Sources */,
-				BBD9B4072C8AB84200E138E6 /* ScannerResultCell.swift in Sources */,
 				BB291CE12C6D176F00A31590 /* ChecklistCollectionViewCell.swift in Sources */,
 				993155EA2B6BEC7F0008EE8C /* Url.swift in Sources */,
 				FA6E51532B59F1320041B7EC /* CameraRouterDelegate.swift in Sources */,
@@ -1100,21 +1001,19 @@
 				FAEF71952B465B74000C232A /* OnboardingRouterDelegate.swift in Sources */,
 				FA6E507D2B50F2F90041B7EC /* CustomTrialView.swift in Sources */,
 				FAD536CB2B4F00A5009C57EE /* SettingsItems.swift in Sources */,
-				BB11E6092BB7266000C3D16B /* LineNode.swift in Sources */,
+				BBFAF8AC2CB16B2600C325B9 /* PrintIDCardCropViewController.swift in Sources */,
 				BBC752742BDF5580008AA207 /* GradientLabel.swift in Sources */,
+				BBFAF8B12CB170BF00C325B9 /* ScannerResultViewController.swift in Sources */,
 				FAEF717E2B465811000C232A /* UIView+Extensions.swift in Sources */,
 				FAEF71842B4658C4000C232A /* Theme.swift in Sources */,
 				BB52F7872C16DEB000FECB23 /* HistoryManager.swift in Sources */,
 				BBB2B2622C21FADF0099B6FE /* TabsControl.swift in Sources */,
+				BBFE077D2CAD69B8007D10AA /* PrinterViewController.swift in Sources */,
 				FAD536B92B4BA3AE009C57EE /* MainViewController+Extensions.swift in Sources */,
-				BB11E6072BB7266000C3D16B /* AreaViewController.swift in Sources */,
+				BB4BFD782CADEB3A0063B235 /* DocumentsViewController.swift in Sources */,
 				FAC3543D2B4915D500C473C5 /* ChildView.swift in Sources */,
-				BB28F41E2C1B687F004A0519 /* HistoryDetailViewController.swift in Sources */,
 				FAC354362B482ECE00C473C5 /* PaywallViewModel.swift in Sources */,
-				FA7183BD2C7BAD4A0068974B /* History.xcdatamodeld in Sources */,
-				BBD9B4012C8AADCE00E138E6 /* ScannerNotFoundViewController.swift in Sources */,
 				FAD536A32B4A7160009C57EE /* MainRoutingDelegate.swift in Sources */,
-				BB5B172A2C88823400E0769D /* ScannerFirstViewController.swift in Sources */,
 				FAEF71972B465BB9000C232A /* OnboardingCoordinator.swift in Sources */,
 				BB19E0B92C85935B009CED7D /* MyGardenCell.swift in Sources */,
 				FAC3541E2B468D6A00C473C5 /* OnboardingItems.swift in Sources */,
@@ -1125,8 +1024,8 @@
 				BB5B172F2C88869500E0769D /* DataPickerViewController.swift in Sources */,
 				FA6E50802B5109480041B7EC /* ThemeEnumForTrialView.swift in Sources */,
 				BB19E0B52C8578A5009CED7D /* ShadowView.swift in Sources */,
+				BBFAF8A22CB10D0100C325B9 /* PrintWebViewController.swift in Sources */,
 				BBA4C3762C8168F40092D8FF /* OnboardingFirstViewController.swift in Sources */,
-				BB4C5EC92C149341003F23EB /* HistoryViewController.swift in Sources */,
 				BB7184652CA5260F0068AF13 /* OnboardingSucceessViewController.swift in Sources */,
 				BB52F7892C16DF1900FECB23 /* CoreDataManager.swift in Sources */,
 				FAEF718B2B46595E000C232A /* AppCoordinator.swift in Sources */,
@@ -1136,8 +1035,6 @@
 				FA6E51512B59F1120041B7EC /* CameraViewModel.swift in Sources */,
 				BB28F41B2C1AF4B4004A0519 /* UIButton+Extensions.swift in Sources */,
 				BB19E0B22C8549A4009CED7D /* SettingsListCell.swift in Sources */,
-				BB11E60A2BB7266000C3D16B /* MeasureSCNView.swift in Sources */,
-				BB52F76D2C15E87D00FECB23 /* HistoryCell.swift in Sources */,
 				BB36532A2C67AC6000858C98 /* BaseViewController.swift in Sources */,
 				BBA4C3792C81CB440092D8FF /* MyGardenViewController.swift in Sources */,
 				FA7183C92C7CFBED0068974B /* EnlargedButton.swift in Sources */,
@@ -1148,33 +1045,28 @@
 				BB52F78B2C18262600FECB23 /* Converter.swift in Sources */,
 				9910CA252B6A63D900336735 /* AnalyticEvent.swift in Sources */,
 				FAEF718D2B465982000C232A /* Coordinator.swift in Sources */,
-				BBC0D7432C8A7A3800BBBEB9 /* ScannerScanningViewController.swift in Sources */,
 				BBA4C37E2C8300F30092D8FF /* OnboardingReviewViewController.swift in Sources */,
 				BB7184612CA4290E0068AF13 /* SelectPrinterViewController.swift in Sources */,
 				FAEF71932B465B1E000C232A /* OnboardingViewController.swift in Sources */,
 				BB5B17252C88323300E0769D /* ReviewCell.swift in Sources */,
 				FAD536AD2B4AF53F009C57EE /* HowToUseCell.swift in Sources */,
 				BB56E7FC2C8A2E6000A3723B /* ScannerViewController.swift in Sources */,
-				FA6E515E2B5A223A0041B7EC /* ResultViewController.swift in Sources */,
 				FA6E514F2B59F0CB0041B7EC /* CameraViewController.swift in Sources */,
 				BB5B17322C88895A00E0769D /* CornerView.swift in Sources */,
 				FAD536C32B4D1C84009C57EE /* SettingsViewModel.swift in Sources */,
-				BBD9B4132C8BFED900E138E6 /* ScannerResultNotHealthyCell.swift in Sources */,
 				FAD536AB2B4AF526009C57EE /* MeasureIdeasCell.swift in Sources */,
 				BB23F5DA2C91691500AAA386 /* PaywallViewController.swift in Sources */,
 				FAEF71802B46583A000C232A /* UIColor+Extensions.swift in Sources */,
 				BB4C7EB62C8C1BF1000ED4A6 /* PlainPlantModels.swift in Sources */,
-				BBC0D7482C8A81FB00BBBEB9 /* ScannerResultViewController.swift in Sources */,
+				BBFAF8A72CB1671500C325B9 /* PrintIDCardViewController.swift in Sources */,
 				FAEF71472B465668000C232A /* AppDelegate.swift in Sources */,
 				BB4F75462C4402E100010CFF /* DiscountManager.swift in Sources */,
-				BBD9B40E2C8BE56900E138E6 /* ScannerPlantIsHealthyController.swift in Sources */,
 				FAEF71862B4658D6000C232A /* Fonts.swift in Sources */,
 				FAD536A52B4A7178009C57EE /* MainCoordinator.swift in Sources */,
 				FAD536B62B4B0F40009C57EE /* MainCellHeader.swift in Sources */,
 				BBC752762BDF81FF008AA207 /* Device.swift in Sources */,
 				FAEF71492B465668000C232A /* SceneDelegate.swift in Sources */,
 				BB7B2CA12BDABA7100A675C3 /* PaywallButton.swift in Sources */,
-				BB36532D2C69218F00858C98 /* HistoryDataViewController.swift in Sources */,
 				FAD536A12B4A7146009C57EE /* MainViewModel.swift in Sources */,
 				BB19E0AE2C85478A009CED7D /* SettingsSwitchCell.swift in Sources */,
 				FA6E51552B59F1450041B7EC /* CameraCoordinator.swift in Sources */,
@@ -1359,7 +1251,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Measure/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Plant ID";
-				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to identify and provide care tips for your plants through image recognition.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to scan.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -1397,7 +1289,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Measure/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Plant ID";
-				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to identify and provide care tips for your plants through image recognition.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to scan.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -1604,19 +1496,6 @@
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		FA7183BB2C7BAD4A0068974B /* History.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FA7183BC2C7BAD4A0068974B /* History.xcdatamodel */,
-			);
-			currentVersion = FA7183BC2C7BAD4A0068974B /* History.xcdatamodel */;
-			path = History.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FAEF713B2B465668000C232A /* Project object */;
 }

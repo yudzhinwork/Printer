@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScannerResultViewController" customModule="PlantID_App" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScannerResultViewController" customModule="Printer_App" customModuleProvider="target">
             <connections>
-                <outlet property="addToGardenButton" destination="mSI-lY-soL" id="YPf-0y-KYR"/>
-                <outlet property="tableView" destination="M40-Bu-IKn" id="t9T-4k-1dN"/>
+                <outlet property="dateLabel" destination="hbS-99-aeX" id="5VL-to-vZE"/>
+                <outlet property="documentNameLabel" destination="kBX-ra-wEE" id="u22-WI-Cxl"/>
+                <outlet property="printButton" destination="f64-QU-g0Q" id="0h3-28-rBl"/>
+                <outlet property="scannedDocumentImageView" destination="3xW-bW-fxh" id="chx-g8-iPH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,43 +23,74 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="M40-Bu-IKn">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="710"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xi5-Zg-LHe">
+                    <rect key="frame" x="16" y="93" width="361" height="561.33333333333337"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3xW-bW-fxh">
+                            <rect key="frame" x="24" y="24" width="313" height="513.33333333333337"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                    </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="7Is-FI-TXC"/>
-                        <outlet property="delegate" destination="-1" id="Bwt-bQ-HvZ"/>
-                    </connections>
-                </tableView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSI-lY-soL">
-                    <rect key="frame" x="24" y="734" width="345" height="60"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="60" id="KcO-cH-6S1"/>
+                        <constraint firstItem="3xW-bW-fxh" firstAttribute="top" secondItem="Xi5-Zg-LHe" secondAttribute="top" constant="24" id="H9c-MY-4EM"/>
+                        <constraint firstAttribute="bottom" secondItem="3xW-bW-fxh" secondAttribute="bottom" constant="24" id="MAa-4r-QEc"/>
+                        <constraint firstAttribute="trailing" secondItem="3xW-bW-fxh" secondAttribute="trailing" constant="24" id="elP-9q-b5Y"/>
+                        <constraint firstItem="3xW-bW-fxh" firstAttribute="leading" secondItem="Xi5-Zg-LHe" secondAttribute="leading" constant="24" id="gro-RZ-u5X"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="ADD TO MY GARDEN" backgroundImage="Button-Background"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f64-QU-g0Q">
+                    <rect key="frame" x="16" y="746" width="361" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="B1y-14-9w8"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
                     <connections>
-                        <action selector="addToGarden:" destination="-1" eventType="touchUpInside" id="Avj-kr-Pr7"/>
+                        <action selector="printAction:" destination="-1" eventType="touchUpInside" id="ZP2-uy-2xR"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbS-99-aeX">
+                    <rect key="frame" x="181" y="689.66666666666663" width="31" height="14.333333333333371"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.33725490196078434" green="0.38823529411764707" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBX-ra-wEE">
+                    <rect key="frame" x="176.66666666666666" y="662.33333333333337" width="39.666666666666657" height="19.333333333333371"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.082352941176470587" green="0.13333333333333333" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="mSI-lY-soL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="9GK-dk-YdQ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mSI-lY-soL" secondAttribute="bottom" constant="24" id="AEk-aB-vcY"/>
-                <constraint firstItem="M40-Bu-IKn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FMn-q2-JCk"/>
-                <constraint firstItem="M40-Bu-IKn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OC8-ah-1bJ"/>
-                <constraint firstItem="mSI-lY-soL" firstAttribute="top" secondItem="M40-Bu-IKn" secondAttribute="bottom" constant="24" id="VUC-yL-wdX"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mSI-lY-soL" secondAttribute="trailing" constant="24" id="gGa-es-Spe"/>
-                <constraint firstAttribute="trailing" secondItem="M40-Bu-IKn" secondAttribute="trailing" id="ntk-mN-t6w"/>
+                <constraint firstItem="hbS-99-aeX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="L9u-Ke-wVZ"/>
+                <constraint firstItem="kBX-ra-wEE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MbJ-bb-noh"/>
+                <constraint firstItem="f64-QU-g0Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="P05-b4-z48"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f64-QU-g0Q" secondAttribute="trailing" constant="16" id="XYr-Ei-gP6"/>
+                <constraint firstItem="hbS-99-aeX" firstAttribute="top" secondItem="kBX-ra-wEE" secondAttribute="bottom" constant="8" id="ZcU-bB-i3d"/>
+                <constraint firstItem="Xi5-Zg-LHe" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-16" id="akj-LH-6o6"/>
+                <constraint firstItem="Xi5-Zg-LHe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="hxs-9A-R7B"/>
+                <constraint firstItem="Xi5-Zg-LHe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="34" id="qQy-2Q-gGF"/>
+                <constraint firstItem="f64-QU-g0Q" firstAttribute="top" secondItem="hbS-99-aeX" secondAttribute="bottom" constant="42" id="vfC-Ch-GEj"/>
+                <constraint firstItem="kBX-ra-wEE" firstAttribute="top" secondItem="Xi5-Zg-LHe" secondAttribute="bottom" constant="8" id="wFD-Ip-8CA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="f64-QU-g0Q" secondAttribute="bottom" constant="16" id="x6N-cG-6qB"/>
             </constraints>
-            <point key="canvasLocation" x="75.572519083969468" y="19.718309859154932"/>
+            <point key="canvasLocation" x="38.931297709923662" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
-        <image name="Button-Background" width="327" height="60"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

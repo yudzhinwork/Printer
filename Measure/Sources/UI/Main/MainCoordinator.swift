@@ -26,52 +26,52 @@ class MainCoordinator: Coordinator {
     }
     
     private func getTabBarContoller() -> UITabBarController {
-        let gardenViewController = MyGardenViewController()
-        let gardenNavigationController = UINavigationController(rootViewController: gardenViewController)
+        let printerViewController = PrinterViewController()
+        let printerNavigationController = UINavigationController(rootViewController: printerViewController)
         
         let scannerViewController = ScannerViewController()
         let scannerNavigationConntroller = UINavigationController(rootViewController: scannerViewController)
         
-        let historyViewController = HistoryViewController()
+        let historyViewController = DocumentsViewController()
         let historyNavigationConntroller = UINavigationController(rootViewController: historyViewController)
         
-        gardenNavigationController.tabBarItem = UITabBarItem(title: "My garden",
-                                                  image: UIImage(named: "TabBar-MyGarden"),
-                                                  selectedImage: UIImage(named: "TabBar-MyGarden"))
-        gardenNavigationController.tabBarItem.tag = TabItem.myGarden.rawValue
+        printerNavigationController.tabBarItem = UITabBarItem(title: "Printer",
+                                                  image: UIImage(named: "TabBar-Printer"),
+                                                  selectedImage: UIImage(named: "TabBar-Printer"))
+        printerNavigationController.tabBarItem.tag = TabItem.myGarden.rawValue
         
         scannerNavigationConntroller.tabBarItem = UITabBarItem(title: "Scanner",
                                                   image: UIImage(named: "TabBar-Scanner"),
                                                   selectedImage: UIImage(named: "TabBar-Scanner"))
         scannerNavigationConntroller.tabBarItem.tag = TabItem.scanner.rawValue
         
-        historyNavigationConntroller.tabBarItem = UITabBarItem(title: "History",
-                                                            image: UIImage(named: "TabBar-History"),
-                                                            selectedImage: UIImage(named: "TabBar-History"))
+        historyNavigationConntroller.tabBarItem = UITabBarItem(title: "Documents",
+                                                            image: UIImage(named: "TabBar-Documents"),
+                                                            selectedImage: UIImage(named: "TabBar-Documents"))
         historyNavigationConntroller.tabBarItem.tag = TabItem.history.rawValue
         
         let profileViewController = SettingsViewController()
-        profileViewController.tabBarItem = UITabBarItem(title: "Profile",
-                                                            image: UIImage(named: "TabBar-Profile"),
-                                                            selectedImage: UIImage(named: "TabBar-Profile"))
+        profileViewController.tabBarItem = UITabBarItem(title: "Settings",
+                                                            image: UIImage(named: "TabBar-Settings"),
+                                                            selectedImage: UIImage(named: "TabBar-Settings"))
         let profileNavigationConntroller = UINavigationController(rootViewController: profileViewController)
         profileNavigationConntroller.tabBarItem.tag = TabItem.profile.rawValue
         
         let tabBarController = CustomTabBarController()
         
-        tabBarController.viewControllers = [gardenNavigationController,
+        tabBarController.viewControllers = [printerNavigationController,
                                             scannerNavigationConntroller,
                                             historyNavigationConntroller,
                                             profileNavigationConntroller]
         
         tabBarController.tabBar.unselectedItemTintColor = UIColor.dynamicColor(
-            light: UIColor(hexString: "#8F9A8C")!,
-            dark: UIColor(hexString: "#8F9A8C")!
+            light: UIColor(hexString: "#9DA2B6")!,
+            dark: UIColor(hexString: "#9DA2B6")!
         )
         
         tabBarController.tabBar.tintColor = UIColor.dynamicColor(
-            light: UIColor(hexString: "#12AD5C")!,
-            dark: UIColor(hexString: "#12AD5C")!
+            light: UIColor(hexString: "#475DB6")!,
+            dark: UIColor(hexString: "#475DB6")!
         )
         
         tabBarController.mainCoordinator = self

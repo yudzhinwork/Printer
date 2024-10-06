@@ -176,11 +176,7 @@ extension MyGardenViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let obj = plantResponses?[indexPath.row] {
-            let vc = ScannerResultViewController()
-            vc.result = obj
-            vc.scannerType = .identify
-            vc.image = UIImage(data: obj.localImageData!)
-            self.navigationController?.pushViewController(vc, animated: true)
+            
         }
     }
     

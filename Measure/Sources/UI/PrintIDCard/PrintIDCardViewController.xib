@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrintIDCardViewController" customModule="Printer_App" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="RF7-Rx-0ir">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qm8-th-B7B">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="132"/>
+                    <subviews>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qby-f7-b4e">
+                            <rect key="frame" x="26" y="74" width="36" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="36" id="6AK-xU-Y5n"/>
+                                <constraint firstAttribute="height" constant="36" id="Boc-kr-rE1"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="Camera-Back"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9l7-yt-7R5">
+                            <rect key="frame" x="335" y="70" width="36" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="XDd-9e-anW"/>
+                                <constraint firstAttribute="width" constant="36" id="mP9-A9-ujp"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="Camera-Flash"/>
+                            <connections>
+                                <action selector="flashAction:" destination="-1" eventType="touchUpInside" id="2Yu-yb-0UM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25098039220000001" green="0.2901960784" blue="0.24313725489999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="9l7-yt-7R5" secondAttribute="bottom" constant="26" id="0jx-fx-wM5"/>
+                        <constraint firstAttribute="height" constant="132" id="0yY-3p-r0p"/>
+                        <constraint firstAttribute="bottom" secondItem="Qby-f7-b4e" secondAttribute="bottom" constant="22" id="7gp-DM-VkD"/>
+                        <constraint firstAttribute="trailing" secondItem="9l7-yt-7R5" secondAttribute="trailing" constant="22" id="MbV-hU-djQ"/>
+                        <constraint firstItem="Qby-f7-b4e" firstAttribute="leading" secondItem="Qm8-th-B7B" secondAttribute="leading" constant="26" id="UZa-36-TiT"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xgc-3D-nFh">
+                    <rect key="frame" x="0.0" y="688" width="393" height="164"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VE-cy-37I">
+                            <rect key="frame" x="164.66666666666666" y="40" width="64" height="64"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="64" id="2jV-Og-R5w"/>
+                                <constraint firstAttribute="height" constant="64" id="LIk-BP-F7h"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="Camera-Photo"/>
+                            <connections>
+                                <action selector="photoAction:" destination="-1" eventType="touchUpInside" id="SLM-7S-3SP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25098039220000001" green="0.2901960784" blue="0.24313725489999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="164" id="68W-Kc-hmo"/>
+                        <constraint firstItem="0VE-cy-37I" firstAttribute="centerX" secondItem="xgc-3D-nFh" secondAttribute="centerX" id="ECG-7r-q30"/>
+                        <constraint firstItem="0VE-cy-37I" firstAttribute="top" secondItem="xgc-3D-nFh" secondAttribute="top" constant="40" id="NzL-vB-PiO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Uhs-Re-c7q"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Qm8-th-B7B" firstAttribute="top" secondItem="RF7-Rx-0ir" secondAttribute="top" id="3KL-u4-EQA"/>
+                <constraint firstAttribute="trailing" secondItem="xgc-3D-nFh" secondAttribute="trailing" id="Pon-N9-yAW"/>
+                <constraint firstItem="xgc-3D-nFh" firstAttribute="leading" secondItem="Uhs-Re-c7q" secondAttribute="leading" id="SyU-a4-7hd"/>
+                <constraint firstAttribute="bottom" secondItem="xgc-3D-nFh" secondAttribute="bottom" id="cGN-3F-h2K"/>
+                <constraint firstItem="Qm8-th-B7B" firstAttribute="leading" secondItem="RF7-Rx-0ir" secondAttribute="leading" id="hP8-fr-VS8"/>
+                <constraint firstAttribute="trailing" secondItem="Qm8-th-B7B" secondAttribute="trailing" id="hdA-SM-qlf"/>
+            </constraints>
+            <point key="canvasLocation" x="75.572519083969468" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Camera-Back" width="36" height="36"/>
+        <image name="Camera-Flash" width="36" height="36"/>
+        <image name="Camera-Photo" width="67" height="67"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -13,7 +13,7 @@ class ShadowViewItem: UIView {
     }
     
     func setupShadow() {
-        self.layer.cornerRadius = 12
+        self.layer.cornerRadius = 20
         self.layer.shadowOffset = CGSize(width: 0, height: 5)
         self.layer.shadowRadius = 16
         self.layer.shadowColor = UIColor(hexString: "#D4D7C9")!.withAlphaComponent(0.5).cgColor

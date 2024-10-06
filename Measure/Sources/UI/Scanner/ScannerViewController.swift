@@ -5,14 +5,15 @@
 import UIKit
 import AVFoundation
 
-class ScannerViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, AVCapturePhotoCaptureDelegate {
+final class ScannerViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, AVCapturePhotoCaptureDelegate {
+    
+    @IBOutlet private weak var scannerMaskImageView: UIImageView!
     
     private var captureSession: AVCaptureSession!
     private var previewLayer: AVCaptureVideoPreviewLayer!
     private var cameraView: UIView!
     private var photoOutput: AVCapturePhotoOutput!
     
-    private var scannerType: ScannerType = .identify
     private var isFlashOn: Bool = false
     
     override func viewDidLoad() {
@@ -31,16 +32,6 @@ class ScannerViewController: UIViewController, UIImagePickerControllerDelegate, 
         }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        let preScannerViewController = ScannerFirstViewController()
-        preScannerViewController.delegate = self
-        preScannerViewController.modalPresentationStyle = .overCurrentContext
-        preScannerViewController.modalTransitionStyle = .crossDissolve
-        self.present(preScannerViewController, animated: true)
-    }
-    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
@@ -52,7 +43,6 @@ class ScannerViewController: UIViewController, UIImagePickerControllerDelegate, 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        // Update the camera view and preview layer frames
         cameraView.frame = view.bounds
         previewLayer.frame = cameraView.bounds
     }
@@ -62,7 +52,6 @@ class ScannerViewController: UIViewController, UIImagePickerControllerDelegate, 
         cameraView.backgroundColor = .black
         view.addSubview(cameraView)
         
-        // Configure the preview layer
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         previewLayer.frame = cameraView.bounds
         previewLayer.videoGravity = .resizeAspectFill
@@ -96,18 +85,13 @@ class ScannerViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         captureSession.startRunning()
     }
-
-    @IBAction func backAction(_ sender: UIButton) {
-        self.tabBarController?.selectedIndex = 0
-    }
-
+    
     @IBAction func flashAction(_ sender: UIButton) {
         guard let device = AVCaptureDevice.default(for: .video), device.hasTorch else {
              print("Torch is not available.")
              return
          }
-         
-         do {
+        do {
              try device.lockForConfiguration()
              
              if isFlashOn {
@@ -122,10 +106,6 @@ class ScannerViewController: UIViewController, UIImagePickerControllerDelegate, 
          } catch {
              print("Error accessing the torch: \(error)")
          }
-    }
-
-    @IBAction func mediaAction(_ sender: UIButton) {
-        
     }
 
     @IBAction func photoAction(_ sender: UIButton) {
@@ -144,45 +124,10 @@ class ScannerViewController: UIViewController, UIImagePickerControllerDelegate, 
              print("Failed to create image from photo data")
              return
          }
-        
-        let vc = ScannerScanningViewController()
-        vc.scannerType = scannerType
-        vc.scanningImage = image
-        self.navigationController?.pushViewController(vc, animated: true)
+//        
+//        let vc = ScannerScanningViewController()
+//        vc.scannerType = scannerType
+//        vc.scanningImage = image
+//        self.navigationController?.pushViewController(vc, animated: true)
      }
-    
-    func openCamera() {
-        guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
-            print("Camera not available on this device.")
-            return
-        }
-        
-        let imagePickerController = UIImagePickerController()
-        imagePickerController.delegate = self
-        imagePickerController.sourceType = .camera
-        imagePickerController.allowsEditing = false
-        present(imagePickerController, animated: true, completion: nil)
-    }
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        
-        if let image = info[.originalImage] as? UIImage {
-            if let imageData = image.jpegData(compressionQuality: 0.8) {
-                let vc = ScannerScanningViewController()
-                vc.scannerType = scannerType
-                vc.scanningImage = image
-                self.navigationController?.pushViewController(vc, animated: true)
-            }
-        }
-        picker.dismiss(animated: true)
-    }
-
-}
-
-extension ScannerViewController: ScannerFirstViewControllerDelegate {
-    
-    func scannerFirstViewController(_ controller: ScannerFirstViewController, scannerType type: Int) {
-        let type = ScannerType(rawValue: type)!
-        scannerType = type
-    }
 }

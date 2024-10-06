@@ -10,10 +10,10 @@ final class PaywallViewController: BaseViewController {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 35, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
         label.textColor = UIColor.black
         label.textAlignment = .center
-        label.text = "Try for free!"
+        label.text = "Printer App - Printer & Scanner"
         return label
     }()
     
@@ -22,13 +22,13 @@ final class PaywallViewController: BaseViewController {
         button.setImage(UIImage(named: "Close")!, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(skipPressed), for: .touchUpInside)
-        button.tintColor = UIColor(hexString: "#404A3E")
+        button.tintColor = UIColor(hexString: "#475DB6")
         return button
     }()
     
     private lazy var continueButton: UIButton = {
         let button = UIButton(type: .system)
-        Theme.buttonStyle(button, title: "try 3 day free trial".uppercased())
+        Theme.buttonStyle(button, title: "Try 3 day free trial")
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(buyTapped), for: .touchUpInside)
         return button
@@ -89,28 +89,31 @@ final class PaywallViewController: BaseViewController {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
-        stackView.spacing = 4
+        stackView.spacing = 14
+        stackView.alignment = .leading  // Выравнивание по левой стороне
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
         let items = [
-            ("Paywall-List", "99.9% accuracy of identification"),
-            ("Paywall-List", "Take care of your plant"),
-            ("Paywall-List", "Tips and treatment for plants")
+            ("Paywall-List", "Scan Documents & Photos"),
+            ("Paywall-List", "Print your photos"),
+            ("Paywall-List", "Print your Saved Files"),
+            ("Paywall-List", "Multiple Printer Support")
         ]
         
         for item in items {
             let imageView = UIImageView(image: UIImage(named: item.0))
             imageView.contentMode = .scaleAspectFit
             imageView.translatesAutoresizingMaskIntoConstraints = false
-            imageView.widthAnchor.constraint(equalToConstant: 24).isActive = true
+            imageView.widthAnchor.constraint(equalToConstant: 24).isActive = true  // Фиксированная ширина для иконки
             imageView.heightAnchor.constraint(equalToConstant: 24).isActive = true
             
             let label = UILabel()
             label.text = item.1
-            label.font = UIFont.systemFont(ofSize: 16, weight: .medium)
+            label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
             label.translatesAutoresizingMaskIntoConstraints = false
-            label.textColor = UIColor(hexString: "#404A3E")
+            label.textColor = UIColor(hexString: "#152239")?.withAlphaComponent(0.65)
             
+            // Создаем горизонтальный стек для иконки и текста
             let itemStack = UIStackView(arrangedSubviews: [imageView, label])
             itemStack.axis = .horizontal
             itemStack.spacing = 8
@@ -196,25 +199,24 @@ final class PaywallViewController: BaseViewController {
         view.addSubview(bottomButtonsStackView)
         
         NSLayoutConstraint.activate([
-            skipButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+            skipButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 8),
             skipButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
             skipButton.heightAnchor.constraint(equalToConstant: 38),
             skipButton.widthAnchor.constraint(equalToConstant: 36),
             
-            titleLabel.topAnchor.constraint(equalTo: skipButton.bottomAnchor, constant: 16),
-            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
-            titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
-            titleLabel.heightAnchor.constraint(equalToConstant: 42),
+            titleLabel.topAnchor.constraint(equalTo: skipButton.bottomAnchor, constant: 8),
+            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            titleLabel.heightAnchor.constraint(equalToConstant: 36),
             
-            featureListStackView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16),
-            featureListStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
-            featureListStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
-            featureListStackView.heightAnchor.constraint(equalToConstant: 90),
-            
-            backgroundImageView.topAnchor.constraint(equalTo: featureListStackView.bottomAnchor, constant: 16),
+            backgroundImageView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16),
             backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
             backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
-            backgroundImageView.bottomAnchor.constraint(equalTo: annuallyButton.topAnchor, constant: -16),
+            
+            featureListStackView.topAnchor.constraint(equalTo: backgroundImageView.bottomAnchor, constant: 30),
+            featureListStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            featureListStackView.heightAnchor.constraint(equalToConstant: 128),
+            featureListStackView.bottomAnchor.constraint(equalTo: annuallyButton.topAnchor, constant: -16),
             
             annuallyButton.bottomAnchor.constraint(equalTo: weeklyButton.topAnchor, constant: -16),
             annuallyButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
@@ -228,12 +230,13 @@ final class PaywallViewController: BaseViewController {
             
             continueButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
             continueButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
-            continueButton.bottomAnchor.constraint(equalTo: bottomButtonsStackView.topAnchor, constant: -22),
+            continueButton.bottomAnchor.constraint(equalTo: bottomButtonsStackView.topAnchor, constant: -16),
             continueButton.heightAnchor.constraint(equalToConstant: 60),
             
             bottomButtonsStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
             bottomButtonsStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
-            bottomButtonsStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0)
+            bottomButtonsStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0),
+            bottomButtonsStackView.heightAnchor.constraint(equalToConstant: 34),
         ])
     }
     
