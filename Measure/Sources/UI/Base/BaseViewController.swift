@@ -36,6 +36,12 @@ private extension BaseViewController {
             NSAttributedString.Key.foregroundColor: color
         ]
         navigationController?.navigationBar.tintColor = color
+        
+        let backImage = UIImage(named: "navigationBack")
+          navigationController?.navigationBar.backIndicatorImage = backImage
+          navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImage
+        navigationItem.backButtonDisplayMode = .minimal
+
     }
 
 }

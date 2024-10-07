@@ -23,7 +23,13 @@
             <subviews>
                 <searchBar contentMode="redraw" placeholder="Type in URL" translatesAutoresizingMaskIntoConstraints="NO" id="701-JD-dCb">
                     <rect key="frame" x="0.0" y="59" width="393" height="56"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <textInputTraits key="textInputTraits"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                        <string>Title</string>
+                    </scopeButtonTitles>
                     <connections>
                         <outlet property="delegate" destination="-1" id="nII-6k-iDG"/>
                     </connections>

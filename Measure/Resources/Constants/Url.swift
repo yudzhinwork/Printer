@@ -1,4 +1,4 @@
 enum Url: String {
-    case privacy = "https://1drv.ms/w/s!AnFjQfe5bEPScJuE_zcOxA2wAxQ?e=f1Sf8T"
-    case terms = "https://1drv.ms/w/s!AnFjQfe5bEPSaPpIpux0tmkIVSE?e=sqrzkD"
+    case privacy = "https://1drv.ms/w/s!AgGD8eygtiAqcDnRFF3gb6ecuLY?e=vc54FE"
+    case terms = "https://1drv.ms/w/s!AgGD8eygtiAqbMKo7gWfO3jXBR4?e=bIFrBk"
 }

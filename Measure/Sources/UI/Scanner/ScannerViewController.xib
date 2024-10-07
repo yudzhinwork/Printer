@@ -11,7 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScannerViewController" customModule="Printer_App" customModuleProvider="target">
             <connections>
-                <outlet property="scannerMaskImageView" destination="RG0-OU-ZLH" id="RWo-38-P7P"/>
+                <outlet property="scannerMaskImageView" destination="RG0-OU-ZLH" id="ee6-J7-Bme"/>
+                <outlet property="view" destination="yv8-b5-Xhz" id="aMb-7T-c4k"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -19,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukV-Kq-9CU">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukV-Kq-9CU">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="132"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsa-cF-bSP">
@@ -31,7 +32,7 @@
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" image="Camera-Flash"/>
                             <connections>
-                                <action selector="flashAction:" destination="-1" eventType="touchUpInside" id="0fg-sN-psC"/>
+                                <action selector="flashAction:" destination="-1" eventType="touchUpInside" id="v0u-1U-iGd"/>
                             </connections>
                         </button>
                     </subviews>
@@ -42,7 +43,7 @@
                         <constraint firstAttribute="trailing" secondItem="Hsa-cF-bSP" secondAttribute="trailing" constant="22" id="bpN-eJ-AZa"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8jd-Mi-NcL">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8jd-Mi-NcL">
                     <rect key="frame" x="0.0" y="132" width="393" height="556"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scanner-Mask" translatesAutoresizingMaskIntoConstraints="NO" id="RG0-OU-ZLH">
@@ -57,7 +58,7 @@
                         <constraint firstItem="RG0-OU-ZLH" firstAttribute="centerY" secondItem="8jd-Mi-NcL" secondAttribute="centerY" id="u9w-B6-KRa"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXu-wD-CSS">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXu-wD-CSS">
                     <rect key="frame" x="0.0" y="688" width="393" height="164"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5It-u6-UYd">
@@ -70,7 +71,7 @@
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" image="Camera-Photo"/>
                             <connections>
-                                <action selector="photoAction:" destination="-1" eventType="touchUpInside" id="zUf-iY-V6t"/>
+                                <action selector="photoAction:" destination="-1" eventType="touchUpInside" id="ZDF-TV-d1Y"/>
                             </connections>
                         </button>
                     </subviews>

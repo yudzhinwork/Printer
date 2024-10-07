@@ -254,11 +254,14 @@ final class PremiumManager {
     @Published var weeklyPrice = "$6.99"
     @Published var annuallyPrice = "$49.99"
     
+    @Published var weeklyPriceOnly: Decimal = 6.99
+    @Published var annuallyPriceOnly: Decimal = 49.99
+    
     static var weeklyProduct: ApphudProduct?
     static var annuallyProduct: ApphudProduct?
     
     @MainActor func setup() {
-        Apphud.start(apiKey: "app_BpHKoAdFjBJttxsY84QPRKd3Mx7Wqh")
+        Apphud.start(apiKey: "app_ABF9SihTs7Ta95s12ieP9Nb9UA1saC")
     }
     
     @MainActor func collectProducts() {
@@ -270,9 +273,11 @@ final class PremiumManager {
                 case "annual.s":
                     PremiumManager.annuallyProduct = p
                     PremiumManager.shared.annuallyPrice = product.displayPrice
+                    PremiumManager.shared.annuallyPriceOnly = product.price
                 case "weekly.s":
                     PremiumManager.weeklyProduct = p
                     PremiumManager.shared.weeklyPrice = product.displayPrice
+                    PremiumManager.shared.weeklyPriceOnly = product.price
                 default:
                     break
                 }

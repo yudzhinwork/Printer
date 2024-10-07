@@ -22,8 +22,11 @@ final class PrintWebViewController: BaseViewController, UISearchBarDelegate, WKN
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Print Web Page"
         setupPrintButton()
-        
+        if let textField = searchBar.value(forKey: "searchField") as? UITextField {
+            textField.textColor = UIColor.black
+        }
         searchBar.delegate = self
         webview.navigationDelegate = self
     }

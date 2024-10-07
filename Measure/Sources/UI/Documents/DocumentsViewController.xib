@@ -85,6 +85,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="361" height="66"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain"/>
+                                    <connections>
+                                        <action selector="scans:" destination="-1" eventType="touchUpInside" id="Uow-3M-XcI"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

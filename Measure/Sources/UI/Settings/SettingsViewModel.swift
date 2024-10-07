@@ -11,7 +11,7 @@ import StoreKit
 import SafariServices
 import AlertKit
 
-private let SUPPORT_EMAIL = "meliskuyman@outlook.com"
+private let SUPPORT_EMAIL = "martashonia@outlook.com"
 
 class SettingsViewModel: NSObject, MFMailComposeViewControllerDelegate {
     weak var viewController: UIViewController?

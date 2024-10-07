@@ -11,4 +11,8 @@ class DocumentsViewController: BaseViewController {
         
         title = "Documents"
     }
+    
+    @IBAction func scans(_ sender: UIButton) {
+        
+    }
 }

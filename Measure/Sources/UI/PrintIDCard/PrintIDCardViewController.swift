@@ -4,8 +4,9 @@
 
 import UIKit
 import AVFoundation
+import VisionKit
 
-class PrintIDCardViewController: BaseViewController {
+class PrintIDCardViewController: BaseViewController, VNDocumentCameraViewControllerDelegate {
     
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
@@ -16,7 +17,11 @@ class PrintIDCardViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupCamera()
+//        setupCamera()
+        
+        let documentCameraViewController = VNDocumentCameraViewController()
+        documentCameraViewController.delegate = self
+        present(documentCameraViewController, animated: true)
     }
     
     private func setupCamera() {

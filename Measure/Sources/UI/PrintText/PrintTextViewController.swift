@@ -20,7 +20,7 @@ final class PrintTextViewController: BaseViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         title = "Print Text"
         textTextView.delegate = self
         textTextView.textContainerInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
@@ -43,6 +43,14 @@ final class PrintTextViewController: BaseViewController, UITextViewDelegate {
             printButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -24),
             printButton.heightAnchor.constraint(equalToConstant: 56),
         ])
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" { // "\n" соответствует клавише "Return" или "Done"
+            textView.resignFirstResponder() // Скрыть клавиатуру
+            return false // Возвращаем false, чтобы предотвратить добавление новой строки
+        }
+        return true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -72,7 +80,6 @@ final class PrintTextViewController: BaseViewController, UITextViewDelegate {
     }
 
     @objc private func printButtonTapped() {
-        // Если текстовое поле пустое, показываем алерт
         if textTextView.text.isEmpty {
             let alert = UIAlertController(title: nil, message: "You need to type something to print!", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -82,15 +89,13 @@ final class PrintTextViewController: BaseViewController, UITextViewDelegate {
             let printController = UIPrintInteractionController.shared
             
              let printInfo = UIPrintInfo(dictionary: nil)
-             printInfo.outputType = .general
-             printInfo.jobName = "Print Text"
+            printInfo.outputType = .general
              printController.printInfo = printInfo
             
-             let formatter = UISimpleTextPrintFormatter(text: textTextView.text)
+            let formatter = UIMarkupTextPrintFormatter(markupText: textTextView.text)
              formatter.startPage = 0
-             formatter.contentInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
              printController.printFormatter = formatter
-            
+                
              printController.present(animated: true, completionHandler: nil)
         }
     }

@@ -203,7 +203,7 @@ final class OnboardingViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        if currentIndex == pages.count - 1 {
+        if currentIndex >= 3 {
             continueButton.isHidden = true
          } else {
              Theme.buttonStyle(continueButton, title: "Continue")
@@ -270,6 +270,7 @@ final class OnboardingViewController: UIViewController {
         pageViewController.setViewControllers([nextPage], direction: .forward, animated: true, completion: nil)
         
         if nextPage is SelectPrinterViewController {
+            
             if let scene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene {
                 DispatchQueue.main.async {
                     SKStoreReviewController.requestReview(in: scene)

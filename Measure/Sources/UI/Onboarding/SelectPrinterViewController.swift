@@ -8,6 +8,7 @@ class SelectPrinterViewController: BaseViewController {
     
     @IBOutlet private var buttons: [UIButton]!
     @IBOutlet private weak var otherButton: UIButton!
+    fileprivate var isActiveNext = false
     
     private let printers = ["HP DeskJet", "HP Envy", "HP Office Jet", "HP LaserJet", "HP PhotoSmart",
     "HP 2000", "Epson EcoTank", "Canon imageCLASS", "Canon PIXMA", "Brother", "Xerox Phaser", "Epson WorkForce"]
@@ -28,7 +29,10 @@ class SelectPrinterViewController: BaseViewController {
     }
     
     @objc private func continueButtonTapped() {
-        
+        let vc = OnboardingSucceessViewController()
+        vc.modalPresentationStyle = .overFullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        self.present(vc, animated: true)
     }
     
     func configure() {
@@ -75,10 +79,11 @@ class SelectPrinterViewController: BaseViewController {
     }
     
     @IBAction func otherAction(_ sender: UIButton) {
-        
+        activateContinueButton()
     }
     
     @objc func printerAction(_ sender: UIButton) {
+        activateContinueButton()
         resetButtons()
         sender.layer.borderColor = UIColor(hexString: "#475DB6")?.cgColor
         activateContinueButton()

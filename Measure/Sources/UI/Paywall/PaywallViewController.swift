@@ -71,7 +71,7 @@ final class PaywallViewController: BaseViewController {
     
     private(set) lazy var annuallyButton: CustomButton = {
         let button = CustomButton()
-        button.configure(topText: "Billed annually ", price: PremiumManager.shared.annuallyPrice, periodText: "billed annually", period: "Yearly", isChosen: false)
+        button.configure(topText: "3 Days FREE", price: PremiumManager.shared.annuallyPrice, periodText: "billed annually", period: "year", isChosen: true)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(annuallyButtonTapped), for: .touchUpInside)
         return button
@@ -79,7 +79,7 @@ final class PaywallViewController: BaseViewController {
     
     private(set) lazy var weeklyButton: CustomButton = {
         let button = CustomButton()
-        button.configure(topText: "Billed weekly  ", price: PremiumManager.shared.weeklyPrice, periodText: "week", period: "Weekly", isChosen: true)
+        button.configure(topText: "3 Days FREE", price: PremiumManager.shared.weeklyPrice, periodText: "week", period: "Weekly", isChosen: false)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(weeklyButtonTapped), for: .touchUpInside)
         return button
@@ -167,8 +167,8 @@ final class PaywallViewController: BaseViewController {
     }
     
     func updatePriceButtons() {
-        weeklyButton.configure(topText: "Billed weekly", price: PremiumManager.shared.weeklyPrice, periodText: "week", period: "Weekly", isChosen: true)
-        annuallyButton.configure(topText: "Billed annually", price: PremiumManager.shared.annuallyPrice, periodText: "billed annually", period: "Yearly", isChosen: false)
+        weeklyButton.configure(topText: "3 Days FREE", price: PremiumManager.shared.weeklyPrice, periodText: "week", period: "week", isChosen: false)
+        annuallyButton.configure(topText: "3 Days FREE", price: PremiumManager.shared.annuallyPrice, periodText: "year", period: "year", isChosen: true)
     }
     
     @objc func skipPressed() {

@@ -11,6 +11,13 @@ class PrinterViewController: BaseViewController, UIDocumentPickerDelegate, UIIma
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let tabBarController = self.tabBarController {
+            tabBarController.tabBar.isHidden = false
+        }
+    }
+    
     @IBAction func fromFilesAction(_ sender: UIButton) {
         let documentPicker = UIDocumentPickerViewController(forOpeningContentTypes: [UTType.pdf, UTType.plainText])
         documentPicker.delegate = self
@@ -74,11 +81,16 @@ class PrinterViewController: BaseViewController, UIDocumentPickerDelegate, UIIma
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        picker.dismiss(animated: true, completion: nil)
+//        picker.dismiss(animated: true, completion: nil)
+//        
+//        guard let image = info[.originalImage] as? UIImage else { return }
+//        
+//        printImage(image)
         
-        guard let image = info[.originalImage] as? UIImage else { return }
-        
-        printImage(image)
+        picker.dismiss(animated: true) { [weak self] in
+            guard let image = info[.originalImage] as? UIImage else { return }
+            self?.printImage(image)
+        }
     }
     
     func printImage(_ image: UIImage) {
