@@ -263,8 +263,7 @@ final class OnboardingViewController: UIViewController {
             delegateRouting?.routeToMainView()
             return
         }
-        // Вернуть
-//        self.isLaunchedBefore = true
+        self.isLaunchedBefore = true
         currentIndex += 1
         let nextPage = pages[currentIndex]
         pageViewController.setViewControllers([nextPage], direction: .forward, animated: true, completion: nil)
